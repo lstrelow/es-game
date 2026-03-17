@@ -2,7 +2,7 @@ import { C, shadow, shadowLg } from "../theme.js";
 import { Avatar } from "../components/ui/index.jsx";
 
 function LogoPlaceholder() {
-  return <img src="/logo.svg" height="32" style={{ display:"block" }} />;
+  return <img src="/logo.png" height="32" style={{ display:"block" }} />;
 }
 
 export function LevelMap({ module, onSelectLevel, onBack, completed, maxPlayable, onEpilogue, allDone }) {

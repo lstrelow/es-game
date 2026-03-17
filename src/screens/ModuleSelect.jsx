@@ -2,7 +2,7 @@ import { C, shadow, shadowLg } from "../theme.js";
 import { MODULES } from "../data/modules.js";
 
 function LogoPlaceholder() {
-  return <img src="/logo.svg" height="32" style={{ display:"block" }} />;
+  return <img src="/logo.png" height="32" style={{ display:"block" }} />;
 }
 
 export function ModuleSelect({ onSelect }) {

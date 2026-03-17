@@ -10,7 +10,7 @@ import { SceneDefinition } from "../components/scenes/SceneDefinition.jsx";
 import { SceneMatching }   from "../components/scenes/SceneMatching.jsx";
 
 function LogoPlaceholder() {
-  return <img src="/logo.svg" height="32" style={{ display:"block" }} />;
+  return <img src="/logo.png" height="32" style={{ display:"block" }} />;
 }
 
 export function LevelPlayer({ levelNr, isLastLevel, onBack, onComplete }) {
