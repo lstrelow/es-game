@@ -17,8 +17,9 @@ export function TitleScreen({ onStart }) {
           Ein Spiel des Lehrstuhls für Enterprise Systems,<br/>Plattformen und Architekturen
         </p>
         <p style={{ color:C.textMid, fontSize:"clamp(13px,3.5vw,15px)", lineHeight:1.85, marginBottom:28, padding:"0 4px" }}>
-          Sie sind Unternehmensberaterin bzw. -berater. Das Unternehmen braucht Sie.<br/>
-          Systeme versagen, Menschen sind frustriert, wichtige Entscheidungen müssen getroffen werden.<br/>
+          Sie sind Unternehmensberaterin bzw. -berater.<br/>
+          Systeme versagen, Menschen sind frustriert,<br/>
+          wichtige Entscheidungen müssen getroffen werden.<br/>
           <span style={{ color:C.accent, fontWeight:700 }}>Bringen Sie Ordnung in das Chaos?</span>
         </p>
         <div style={{ display:"flex", justifyContent:"center", gap:"clamp(8px,3vw,16px)", marginBottom:28, flexWrap:"wrap" }}>
