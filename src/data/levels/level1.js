@@ -39,7 +39,7 @@ export const L1 = {
     },
     {
       id: "1_3", type: "persona", charKey: "carlos",
-      intro: "Ich leite ein 40-köpfiges Vertriebsteam. Unsere Kundendaten? Verteilt über Outlook-Ordner, persönliche Notizbücher und eine selbstgebastelte Excel-Tabelle. Ich nenne sie liebevoll 'Carlos-CRM'. Das funktioniert – solange ich da bin. Aber was passiert, wenn einer meiner besten Leute das Unternehmen verlässt?",
+      intro: "Ich leite ein 40-köpfiges Vertriebsteam. Unsere Kundendaten? Verteilt über Outlook-Ordner, persönliche Notizbücher und eine selbstgebastelte Excel-Tabelle. Ich nenne sie liebevoll 'Carlos-CRM'. Das funktioniert – solange ich da bin.",
       dailyRoutine: "Carlos verbringt täglich 1–2 Stunden damit, Informationen aus verschiedenen Quellen zusammenzusuchen, bevor er Kundengespräche führen kann. Wenn ein Vertriebsmitarbeiter das Unternehmen verlässt, gehen häufig alle Kundeninformationen und die gesamte Beziehungsgeschichte verloren.",
       question: "Welchen strategischen Nachteil verursacht dieser Zustand für NEXUS Corp?",
       answers: [
