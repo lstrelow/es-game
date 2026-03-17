@@ -9,16 +9,8 @@ import { SceneReflection } from "../components/scenes/SceneReflection.jsx";
 import { SceneDefinition } from "../components/scenes/SceneDefinition.jsx";
 import { SceneMatching }   from "../components/scenes/SceneMatching.jsx";
 
-// Logo placeholder
 function LogoPlaceholder() {
-  return (
-    <div style={{ display:"flex", alignItems:"center", gap:8 }}>
-      <div style={{ width:32, height:32, borderRadius:6, background:"#f2ebe3", border:"1px solid #ddd0c2", display:"flex", alignItems:"center", justifyContent:"center" }}>
-        <span style={{ fontSize:16 }}>🎓</span>
-      </div>
-      <span style={{ color:"#a89880", fontSize:11, fontWeight:600 }}>Ihr Logo</span>
-    </div>
-  );
+  return <img src="/logo.svg" height="32" style={{ display:"block" }} />;
 }
 
 export function LevelPlayer({ levelNr, isLastLevel, onBack, onComplete }) {

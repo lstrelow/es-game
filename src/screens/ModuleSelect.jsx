@@ -1,16 +1,8 @@
 import { C, shadow, shadowLg } from "../theme.js";
 import { MODULES } from "../data/modules.js";
 
-// Logo placeholder
 function LogoPlaceholder() {
-  return (
-    <div style={{ display:"flex", alignItems:"center", gap:8 }}>
-      <div style={{ width:32, height:32, borderRadius:6, background:C.bgDeep, border:`1px solid ${C.border}`, display:"flex", alignItems:"center", justifyContent:"center" }}>
-        <span style={{ fontSize:16 }}>🎓</span>
-      </div>
-      <span style={{ color:C.textLight, fontSize:11, fontWeight:600 }}>Ihr Logo</span>
-    </div>
-  );
+  return <img src="/logo.svg" height="32" style={{ display:"block" }} />;
 }
 
 export function ModuleSelect({ onSelect }) {
