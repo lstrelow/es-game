@@ -1,13 +1,24 @@
 import { C, shadow, shadowLg } from "../theme.js";
 import { MODULES } from "../data/modules.js";
-import { XPBar } from "../components/ui/index.jsx";
 
-export function ModuleSelect({ onSelect, xp }) {
+// Logo placeholder
+function LogoPlaceholder() {
+  return (
+    <div style={{ display:"flex", alignItems:"center", gap:8 }}>
+      <div style={{ width:32, height:32, borderRadius:6, background:C.bgDeep, border:`1px solid ${C.border}`, display:"flex", alignItems:"center", justifyContent:"center" }}>
+        <span style={{ fontSize:16 }}>🎓</span>
+      </div>
+      <span style={{ color:C.textLight, fontSize:11, fontWeight:600 }}>Ihr Logo</span>
+    </div>
+  );
+}
+
+export function ModuleSelect({ onSelect }) {
   return (
     <div style={{ minHeight:"100vh", background:C.bg }}>
       <div style={{ background:C.bgCard, borderBottom:`1px solid ${C.border}`, padding:"12px 16px", display:"flex", justifyContent:"space-between", alignItems:"center", boxShadow:"0 1px 8px rgba(0,0,0,0.05)" }}>
         <h2 style={{ color:C.accent, fontSize:"clamp(16px,4vw,22px)", fontWeight:900, margin:0 }}>Modulauswahl</h2>
-        <XPBar xp={xp} />
+        <LogoPlaceholder />
       </div>
       <div style={{ maxWidth:720, margin:"0 auto", padding:"20px 16px" }}>
         <div style={{ display:"flex", flexDirection:"column", gap:16 }}>
