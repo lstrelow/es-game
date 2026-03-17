@@ -7,7 +7,7 @@ export function SceneCompany({ scene, onNext }) {
     <div>
       <h3 style={{ color:C.text, fontSize:18, fontWeight:800, marginBottom:14 }}>{scene.title}</h3>
       <p style={{ color:C.textMid, fontSize:14, lineHeight:1.75, marginBottom:20 }}>{d.description}</p>
-      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(100px,1fr))", gap:10, marginBottom:20 }}>
+      <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:10, marginBottom:20 }}>
         {d.metrics.map((m,i) => <div key={i} style={{ padding:"14px 12px", borderRadius:12, background:C.bgWarm, border:`1px solid ${C.border}`, textAlign:"center" }}><div style={{ fontSize:22, marginBottom:4 }}>{m.icon}</div><div style={{ color:C.accent, fontSize:17, fontWeight:800 }}>{m.value}</div><div style={{ color:C.textLight, fontSize:11 }}>{m.label}</div></div>)}
       </div>
       <div style={{ padding:"14px 18px", borderRadius:14, background:"#fff5f0", border:`1px solid ${C.accentLight}`, marginBottom:16 }}>
