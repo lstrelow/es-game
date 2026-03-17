@@ -28,7 +28,7 @@ export const MODULES = [
     color: C.secondDark,
     description: "NEXUS Corp ist zum Global Player geworden. Legacy-Systeme, Komplexität, KI-Agenten und Governance dominieren die Agenda.",
     locked: true,
-    lockReason: "🎓 Erst den Bachelor machen – dann reden wir!",
+    lockReason: "🎓 Wird mit dem Bachelorabschluss freigeschaltet!",
     levels: [
       { id: 1, title: "Komplexität großer ES",          topic: "Landschaftsanalyse" },
       { id: 2, title: "Integrationsmanagement",         topic: "IS-Integration" },
