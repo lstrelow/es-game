@@ -1,7 +1,7 @@
 export const L1 = {
   intro: {
     charKey: "maya",
-    message: "Herzlich willkommen bei NEXUS Corp! Ich bin Maya Chen, Gründerin und CEO. Ich freue mich sehr, dass Sie als externe Beraterin bzw. externer Berater zu uns stoßen. In den letzten acht Jahren sind wir von einer Idee in einer Garage zu einem mittelständischen Unternehmen mit 120 Mitarbeitenden gewachsen – aber unsere Systeme und Prozesse sind dabei leider nicht mitgewachsen. Bevor wir gemeinsam Lösungen entwickeln können, möchte ich Ihnen zunächst unser Unternehmen und mein Team vorstellen. Nur wer die Menschen und ihre Herausforderungen kennt, kann wirksam helfen.",
+    message: "Herzlich willkommen bei NEXUS Corp! Ich bin Maya Chen, Gründerin und CEO. Ich freue mich sehr, dass Sie als externes Beraterteam zu uns stoßen. In den letzten acht Jahren sind wir von einer Idee zu einem mittelständischen Unternehmen mit 120 Mitarbeitenden gewachsen – aber unsere Systeme und Prozesse sind dabei leider nicht mitgewachsen. Bevor wir gemeinsam Lösungen entwickeln können, möchte ich Ihnen zunächst unser Unternehmen und mein Team vorstellen. Nur wer die Menschen und ihre Herausforderungen kennt, kann wirksam helfen.",
   },
   scenes: [
     {
