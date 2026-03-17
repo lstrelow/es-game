@@ -28,7 +28,7 @@ export function LevelMap({ module, onSelectLevel, onBack, xp, completed, onEpilo
           <Avatar charKey="maya" size="md" active />
           <div>
             <div style={{ fontSize:10, fontWeight:700, color:C.accent, textTransform:"uppercase", letterSpacing:"2px", marginBottom:6 }}>Die Ausgangslage</div>
-            <p style={{ color:C.text, fontSize:13, lineHeight:1.7, margin:0 }}>NEXUS Corp hat 120 Mitarbeitende, drei Lagerstandorte und massive Wachstumsschmerzen. Manuell geführte Excel-Tabellen führen zu Chaos. Ihre Mission über 9 Level: Helfen Sie dabei, die ersten Unternehmenssysteme einzuführen – und nehmen Sie dabei das Team mit. Denn Technologie allein reicht nie.</p>
+            <p style={{ color:C.text, fontSize:13, lineHeight:1.7, margin:0 }}>NEXUS Corp hat 120 Mitarbeitende, drei Lagerstandorte und massive Wachstumsschmerzen. Manuell geführte Excel-Tabellen führen zu Chaos. Ihre Mission über 9 Level: Helfen Sie dabei, die ersten Unternehmenssysteme einzuführen – und nehmen Sie dabei das Team mit. Denn Technologie allein reicht nicht aus.</p>
           </div>
         </div>
         <div style={{ position:"relative" }}>
