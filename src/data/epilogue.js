@@ -8,5 +8,5 @@ export const EPILOGUE_M1 = {
     { charKey:"lena",   text:"Ich analysiere jetzt tatsächlich Daten, statt sie nur zu sammeln. Meine Berichte sind in Echtzeit. Gestern hat Maya auf Basis eines meiner Dashboards eine strategische Entscheidung getroffen – innerhalb von 10 Minuten. Das ist der Moment, für den ich diesen Job gemacht habe." },
     { charKey:"priya",  text:"Die Reise hat gerade erst begonnen. Das ERP ist ein Fundament – kein Ziel. NEXUS wächst weiter, und mit dem Wachstum kommen neue Herausforderungen: Performance unter Last, internationale Expansion, technische Schulden, die wir heute schon aufbauen. Wer das Master-Modul belegt... der wird verstehen, was ich meine." },
   ],
-  closing: "Sie haben NEXUS Corp durch seinen ersten großen Wandel begleitet. Die Grundlagen sind gelegt – aber die eigentliche Komplexität liegt noch vor Ihnen. Wer das Master-Modul besucht, wird die Konsequenzen der heutigen Entscheidungen erleben.",
+  closing: "Sie haben NEXUS Corp durch seinen ersten großen Wandel begleitet. Die Grundlagen sind gelegt – aber die eigentliche Komplexität liegt noch vor Ihnen. Wer das Master-Modul 'Management of Large Enterprise Systems' besucht, wird die Konsequenzen der heutigen Entscheidungen erleben.",
 };

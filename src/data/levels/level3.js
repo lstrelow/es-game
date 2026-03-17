@@ -9,7 +9,7 @@ export const L3 = {
       charMessage: "Fangen wir mit dem Herzstück an. Wenn Unternehmen von 'dem System' sprechen, meinen sie meistens das hier.",
       definition: {
         term: "ERP – Enterprise Resource Planning",
-        summary: "Ein ERP-System ist ein integriertes Anwendungspaket, das die operativen Prozesse in allen wesentlichen betrieblichen Funktionsbereichen unterstützt — Finanz- und Rechnungswesen, Personalwirtschaft, Materialwirtschaft, Produktion, Vertrieb. Die Integration wird von einer zentralen Datenbank getragen, wodurch Datenredundanzen vermieden und integrierte Geschäftsprozesse ermöglicht werden. [Hansen & Neumann 2009]",
+        summary: "Ein ERP-System ist ein integriertes Anwendungspaket, das die operativen Prozesse in allen wesentlichen betrieblichen Funktionsbereichen unterstützt — Finanz- und Rechnungswesen, Personalwirtschaft, Materialwirtschaft, Produktion, Vertrieb. Die Integration wird von einer zentralen Datenbank getragen, wodurch Datenredundanzen vermieden und integrierte Geschäftsprozesse ermöglicht werden (Hansen & Neumann, 2009).",
         aspects: [
           { icon: "🗄️", title: "Zentrale Datenbank",      text: "Alle Bereiche greifen auf dieselben Daten zu — keine Silos, keine Redundanzen" },
           { icon: "🔗", title: "Integration",              text: "Finanz-, Personal-, Lager-, Produktions- und Vertriebsprozesse sind miteinander verknüpft" },
@@ -48,10 +48,10 @@ export const L3 = {
     },
     {
       id: "3_3", type: "definition", charKey: "maya",
-      charMessage: "Tom hat mir heute Morgen gesagt, dass wir einen wichtigen Kunden nicht beliefern konnten — weil ein Lieferant drei Wochen zu spät war und wir es nicht kommen sahen.",
+      charMessage: "Tom hat mir heute Morgen gesagt, dass wir einen wichtigen Kunden nicht beliefern konnten — weil ein Lieferant drei Wochen zu spät geliefert hat und wir das nicht haben kommen sehen.",
       definition: {
         term: "SCM – Supply Chain Management",
-        summary: "SCM erfüllt die Aufgabe, betriebswirtschaftliche Handlungsempfehlungen zur Gestaltung von Lieferketten zu generieren. Ziel ist es, Effizienz, Qualität und Reaktionsfähigkeit der Lieferkette zu maximieren. [Zelewski et al. 2008; Chopra & Meindl 2007]",
+        summary: "SCM erfüllt die Aufgabe, betriebswirtschaftliche Handlungsempfehlungen zur Gestaltung von Lieferketten zu generieren. Ziel ist es, Effizienz, Qualität und Reaktionsfähigkeit der Lieferkette zu maximieren (Zelewski et al., 2008; Chopra & Meindl, 2007).",
         aspects: [
           { icon: "📋", title: "Bedarfsplanung",              text: "Analyse benötigter Materialien, Bestimmung optimaler Bestellmengen, Prognosemethoden" },
           { icon: "📦", title: "Lagerhaltung & Bestandsmgmt", text: "Materialverfügbarkeit sicherstellen bei gleichzeitiger Minimierung der Lagerkosten" },
@@ -72,10 +72,10 @@ export const L3 = {
       charMessage: "Wir kaufen bei über 40 Lieferanten ein. Priya hat mir letzte Woche gezeigt, dass wir keine einheitlichen Kriterien haben — jede Abteilung wählt Lieferanten nach eigenen Maßstäben aus.",
       definition: {
         term: "SRM – Supplier Relationship Management",
-        summary: "SRM bezeichnet die IT-gestützte Gestaltung der strategischen und operativen Beschaffungsprozesse und des Lieferantenmanagements, ausgehend von einer Beschaffungsgesamtstrategie. [Appelfeller & Buchholz 2011]",
+        summary: "SRM bezeichnet die IT-gestützte Gestaltung der strategischen und operativen Beschaffungsprozesse und des Lieferantenmanagements, ausgehend von einer Beschaffungsgesamtstrategie (Appelfeller & Buchholz, 2011).",
         aspects: [
           { icon: "🔍", title: "Lieferantenauswahl",    text: "Systematische Identifikation geeigneter Lieferanten nach Preis, Qualität, Zuverlässigkeit und Nachhaltigkeit" },
-          { icon: "🤝", title: "Lieferantenentwicklung", text: "Aufbau langfristiger Partnerschaften durch strategische Allianzen und Entwicklungsprogramme" },
+          { icon: "🤝", title: "Lieferanten- entwicklung", text: "Aufbau langfristiger Partnerschaften durch strategische Allianzen und Entwicklungs- programme" },
           { icon: "💡", title: "Innovationspartner",    text: "Identifikation von Lieferanten als Quellen für Innovationen — nicht nur als Warenlieferanten" },
           { icon: "🏷️", title: "Beispiele",             text: "SAP Ariba, Ivalua, Coupa" },
         ],
@@ -93,7 +93,7 @@ export const L3 = {
       charMessage: "Carlos hat mich gefragt, ob wir unsere Produkte auch online verkaufen könnten. Dafür bräuchten wir eine ganz eigene Kategorie von System.",
       definition: {
         term: "Shopsystem / E-Commerce",
-        summary: "Ein Shopsystem steht für den elektronischen Verkauf von Produkten bzw. Dienstleistungen über digitale Netzwerke. [Kollmann 2019]",
+        summary: "Ein Shopsystem steht für den elektronischen Verkauf von Produkten bzw. Dienstleistungen über digitale Netzwerke (Kollmann, 2019).",
         aspects: [
           { icon: "🖼️", title: "Content-Management",      text: "Bereitstellung von Produktinformationen in Texten, Bildern, Videos" },
           { icon: "🎯", title: "Marketing Automation",     text: "Personalisierte Marketingkampagnen auf Basis von Datenauswertungen" },
@@ -114,11 +114,11 @@ export const L3 = {
       charMessage: "Lena verbringt 60 % ihrer Zeit damit, Daten zusammenzusuchen statt sie zu analysieren. Das ist verschwendetes Potenzial.",
       definition: {
         term: "BI – Business Intelligence",
-        summary: "Business Intelligence ist ein Oberbegriff für Anwendungen, Infrastruktur, Werkzeuge und Best Practices für den Zugang zu und die Analyse von Daten und Information für die strategische Entscheidungsfindung. [Gartner 2013]",
+        summary: "Business Intelligence ist ein Oberbegriff für Anwendungen, Infrastruktur, Werkzeuge und Best Practices für den Zugang zu und die Analyse von Daten und Information für die strategische Entscheidungsfindung (Gartner, 2013).",
         aspects: [
           { icon: "🗄️", title: "Datenbereitstellung",       text: "Konsolidierung von Daten aus verschiedenen Quellen — strukturierte Bereitstellung über ein Data Warehouse" },
-          { icon: "📐", title: "Informationsgenerierung",    text: "Entwicklung endbenutzerfreundlicher Berichtskomponenten auf Basis statistischer Modelle" },
-          { icon: "📊", title: "Informationsbereitstellung", text: "Visualisierungskomponenten für zielgruppengerechte und konsistente Ergebnispräsentation" },
+          { icon: "📐", title: "Informations- generierung",    text: "Entwicklung endbenutzer- freundlicher Berichtskomponenten auf Basis statistischer Modelle" },
+          { icon: "📊", title: "Informations- bereitstellung", text: "Visualisierungs- komponenten für zielgruppengerechte und konsistente Ergebnispräsentation" },
           { icon: "🏷️", title: "Beispiele",                 text: "Tableau, SAP Analytics, AWS QuickSight, IBM Cognos" },
         ],
         nexusContext: "Lenas manuelle Excel-Berichte sind beim Versenden bereits veraltet. BI würde Daten aus ERP, CRM und SCM automatisch konsolidieren und Maya Echtzeit-Kennzahlen liefern.",
@@ -156,7 +156,7 @@ export const L3 = {
   ],
   outro: {
     charKey: "maya",
-    message: "Hervorragend! Sie verstehen jetzt, welche Systeme es gibt und welche Probleme sie lösen. Im nächsten Schritt schauen wir uns an, wie diese Systeme gestaltet sein müssen, damit Menschen sie auch wirklich nutzen wollen.",
+    message: "Hervorragend! Sie verstehen jetzt, welche ES-Komponenten es gibt und welche Probleme sie lösen. Im nächsten Schritt schauen wir uns an, wie diese Systeme gestaltet sein müssen, damit Menschen sie auch wirklich nutzen wollen.",
     xp: 300,
     badge: "🧩 Systemkenner",
   },

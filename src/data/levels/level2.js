@@ -9,12 +9,12 @@ export const L2 = {
       charMessage: "Klingt trivial – aber lassen Sie uns präzise sein: Was genau ist ein Unternehmen aus wissenschaftlicher Perspektive?",
       definition: {
         term: "Betrieb & Unternehmen (Enterprise)",
-        summary: "Enterprise ist ein komplexes, integriertes, voneinander abhängiges System von Menschen, Prozessen und Technologien, welches den von Stakeholdern festgelegten Mehrwert erzielt. [Nightingale & Srinivasan 2011]",
+        summary: "Ein Enterprise ist ein komplexes, integriertes, voneinander abhängiges System von Menschen, Prozessen und Technologien, welches den von Stakeholdern festgelegten Mehrwert erzielt (Nightingale & Srinivasan, 2011).",
         aspects: [
           { icon: "🏭", title: "Betrieb",              text: "Zentrales Erfahrungsobjekt der BWL und Wirtschaftsinformatik – die allgemeinste Form wirtschaftlicher Einheit" },
           { icon: "🏢", title: "Unternehmen",          text: "Spezialfall des Betriebs: vorwiegend darauf ausgerichtet, fremden Güter- und Leistungsbedarf zu decken" },
           { icon: "🏠", title: "Haushalt",             text: "Gegenpart zum Unternehmen: deckt den eigenen Bedarf selbst – kein Marktziel" },
-          { icon: "🔗", title: "Enterprise = Unternehmen", text: "Beide Begriffe werden synonym verwendet – keine abweichende Definition in dieser Vorlesung" },
+          { icon: "🔗", title: "Enterprise = Unternehmen", text: "Beide Begriffe werden synonym verwendet – keine abweichende Definition in dieser Veranstaltung" },
         ],
         nexusContext: "NEXUS Corp ist ein Unternehmen: Das Ziel ist die Deckung fremden Bedarfs – Industriekunden kaufen Hardware, die NEXUS produziert und vertreibt. Der Mehrwert für Stakeholder ist der Maßstab für Erfolg.",
       },
@@ -48,15 +48,15 @@ export const L2 = {
     },
     {
       id: "2_3", type: "definition", charKey: "tom",
-      charMessage: "Bei mir im Lager weiß jeder, was seine Stelle ist – das haben wir klar geregelt. Aber wenn eine Bestellung reinkommt, die durch Vertrieb, Lager und Buchhaltung muss? Da bricht das Chaos aus. Irgendwie sind das zwei verschiedene Probleme.",
+      charMessage: "Bei mir im Lager weiß jeder, was zu tun ist – das haben wir klar geregelt. Aber wenn eine Bestellung reinkommt, die durch Vertrieb, Lager und Buchhaltung muss? Da bricht das Chaos aus. Irgendwie sind das zwei verschiedene Probleme.",
       definition: {
         term: "Aufbauorganisation & Ablauforganisation",
-        summary: "Aufbauorganisation: Verteilung von Aufgaben auf Aufgabenträger (Stellen, Abteilungen) – der statische, strukturelle Aspekt. [Bea/Göbel 1999; Kosiol 1976] · Ablauforganisation: raumzeitliche Strukturierung der Arbeitsvorgänge – der dynamische, prozessuale Aspekt. [Kosiol 1976]",
+        summary: "Aufbauorganisation: Verteilung von Aufgaben auf Aufgabenträger (Stellen, Abteilungen) – der statische, strukturelle Aspekt (Bea & Göbel 1999; Kosiol 1976). Ablauforganisation: raumzeitliche Strukturierung der Arbeitsvorgänge – der dynamische, prozessuale Aspekt (Kosiol, 1976).",
         aspects: [
           { icon: "🏗️", title: "Aufbauorganisation (statisch)",  text: "Wer? – Stellen, Abteilungen, Hierarchien, Zuständigkeiten. Fokus: Struktur" },
           { icon: "🔄", title: "Ablauforganisation (dynamisch)", text: "Wie & Wann? – Raumzeitliche Strukturierung der Arbeitsvorgänge. Fokus: Prozesse" },
-          { icon: "📌", title: "Quelle Aufbau",                  text: "Bea, Göbel 1999, S. 221ff.; Nordsieck 1955, S. 76; Kosiol 1976, S. 43" },
-          { icon: "📌", title: "Quelle Ablauf",                  text: "Kosiol 1976, S. 43" },
+          { icon: "📌", title: "Quelle Aufbau",                  text: "Bea & Göbel, 1999, S. 221ff.; Nordsieck, 1955, S. 76; Kosiol, 1976, S. 43" },
+          { icon: "📌", title: "Quelle Ablauf",                  text: "Kosiol, 1976, S. 43" },
         ],
         nexusContext: "NEXUS Corp hat eine klare Aufbauorganisation: Tom leitet Logistik, Carlos den Vertrieb. Aber der Ablauf einer Kundenbestellung – Angebot, Kommissionierung, Versand, Rechnung – ist raumzeitlich nicht strukturiert.",
       },
@@ -81,7 +81,7 @@ export const L2 = {
         ],
         nexusContext: "NEXUS Corp ist ein offenes System: Es bezieht Inputs von Beschaffungsmärkten (Lieferanten), gibt Outputs an Absatzmärkte ab (Kunden), und wird von gesellschaftlicher Umwelt beeinflusst (Gesetze, Steuern, Anwohner).",
       },
-      question: "NEXUS Corp erhält eine neue Umweltauflage: Lieferwagen müssen ab 2026 elektrisch sein. Warum ist das aus Systemsicht ein relevantes Ereignis?",
+      question: "NEXUS Corp erhält eine neue Umweltauflage: Lieferwagen müssen ab 2027 elektrisch sein. Warum ist das aus Systemsicht ein relevantes Ereignis?",
       answers: [
         { text: "Weil es die Kosten erhöht und damit den Gewinn mindert.", correct: false, feedback: "Das ist eine betriebswirtschaftliche Konsequenz, aber nicht die systemtheoretische Begründung der Relevanz." },
         { text: "Weil NEXUS Corp als offenes System in Beziehung zu seiner gesellschaftlichen Umwelt steht – externe Einflüsse (Gesetze, Institutionen) wirken als Inputs auf das System.", correct: true, feedback: "Genau. Offene Systeme stehen in Austauschbeziehungen mit ihrer Umwelt. Gesetzliche Auflagen sind Inputs der gesellschaftlichen Umwelt, die interne Systemzustände verändern." },
@@ -95,10 +95,10 @@ export const L2 = {
         term: "Informationssystem (IS)",
         summary: "Ein Informationssystem (genauer: Informations- und Kommunikationssystem) ist ein System, das den Zwecken der Information und Kommunikation dient. IS tragen durch die Repräsentation von interessierenden Aspekten der Realität in Informationen zur Bewältigung betrieblicher Aufgaben bei.",
         aspects: [
-          { icon: "📡", title: "Zweck: Information & Kommunikation", text: "IS dient der Informationsversorgung und der Kommunikation zwischen Aufgabenträgern" },
-          { icon: "🪞", title: "Realitätsrepräsentation",            text: "IS bildet interessierende Aspekte der Realität in Informationen ab – Modell der betrieblichen Wirklichkeit" },
-          { icon: "⚙️", title: "Betriebliche Aufgaben",              text: "IS trägt zur Bewältigung konkreter betrieblicher Aufgaben bei – es ist kein Selbstzweck" },
-          { icon: "👥", title: "Soziotechnisches System",            text: "IS umfasst Menschen, Prozesse und Technik – nicht nur Software" },
+          { icon: "📡", title: "Zweck: Information & Kommunikation", text: "IS dienen der Informationsversorgung und der Kommunikation zwischen Aufgabenträgern" },
+          { icon: "🪞", title: "Realitäts- repräsentation",            text: "IS bilden Aspekte der Realität in Informationen ab – Modelle der betrieblichen Wirklichkeit" },
+          { icon: "⚙️", title: "Betriebliche Aufgaben",              text: "IS tragen zur Bewältigung konkreter betrieblicher Aufgaben bei – es ist kein Selbstzweck" },
+          { icon: "👥", title: "Soziotechnisches System",            text: "IS umfassen Menschen, Prozesse und Technik – nicht nur Software" },
         ],
         nexusContext: "Lenas manuelles Reporting-System ist ein vollständiges Informationssystem: Es repräsentiert betriebliche Realität (Lagerbestände, Umsätze) in Informationen, dient der Kommunikation und bewältigt betriebliche Aufgaben.",
       },
@@ -123,7 +123,7 @@ export const L2 = {
         ],
         nexusContext: "Priya meint mit 'neuem ERP' ein neues Anwendungssystem. Maya meint mit 'besserem IS' das gesamte Gefüge – auch die Prozesse, Menschen und wie Information genutzt wird.",
       },
-      question: "NEXUS Corp führt SAP ein. Carlos sagt: 'Jetzt haben wir ein perfektes Informationssystem!' Warum ist das voreilig?",
+      question: "Es wird darüber diskutiert, SAP einzuführen. Carlos sagt: 'Dann hätten wir ein perfektes Informationssystem!' Warum ist das voreilig?",
       answers: [
         { text: "Weil SAP zu komplex für einen Mittelständler ist.", correct: false, feedback: "Das ist eine praktische Einschätzung, aber nicht die konzeptionelle Antwort. Die Frage zielt auf das Verhältnis von AS und IS." },
         { text: "Weil ein Anwendungssystem nur der automatisierte Teil des IS ist – das Organisationssystem (Prozesse, Rollen, nicht-automatisierte Information) muss separat gestaltet werden.", correct: true, feedback: "Präzise! AS ⊂ IS. Ein neues Anwendungssystem ersetzt nicht das gesamte Informationssystem. Ohne Anpassung des Organisationssystems wird SAP den IS-Zweck nicht erfüllen." },
@@ -146,7 +146,7 @@ export const L2 = {
   ],
   outro: {
     charKey: "priya",
-    message: "Hervorragend! Sie beherrschen jetzt die Grundbegriffe: Betrieb und Unternehmen nach Nightingale & Srinivasan, den analytisch-gestaltenden Organisationsbegriff, Aufbau- und Ablauforganisation nach Kosiol, den offenen Systembegriff sowie die präzise Unterscheidung von Informationssystem und Anwendungssystem.",
+    message: "Hervorragend! Sie beherrschen jetzt die Grundbegriffe: Betrieb und Unternehmen, den analytisch-gestaltenden Organisationsbegriff, die Begriffe Aufbau- und Ablauforganisation, den offenen Systembegriff sowie die präzise Unterscheidung von Informationssystem und Anwendungssystem.",
     xp: 250,
     badge: "🎓 Begriffsmeister",
   },

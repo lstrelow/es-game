@@ -17,8 +17,8 @@ export const LEARNING_GOALS = {
     "IS-Grundkonzepte: Datensilo, implizites Wissen, gewachsene IT",
   ],
   2: [
-    "Betrieb & Unternehmen nach Nightingale & Srinivasan",
-    "Organisation: analytisch-gestaltende Perspektive",
+    "Betrieb & Unternehmen nach Nightingale & Srinivasan (2011)",
+    "Organisation: Analytisch-gestaltende Perspektive",
     "Aufbauorganisation (statisch) vs. Ablauforganisation (raumzeitlich)",
     "System als Modell einer Ganzheit – offenes System Unternehmen",
     "Informationssystem (IS) vs. Anwendungssystem (AS)",

@@ -57,7 +57,7 @@ function AnimatedScene({ onDone }) {
       <div style={{ textAlign:"center", marginBottom:36 }}>
         <div style={{ fontSize:48, marginBottom:8 }}>🎉</div>
         <h1 style={{ color:"#fff", fontSize:28, fontWeight:900, margin:"0 0 6px", textShadow:"0 2px 20px rgba(237,110,69,0.6)" }}>Alle Level abgeschlossen!</h1>
-        <p style={{ color:"rgba(255,255,255,0.6)", fontSize:14, margin:0 }}>Das gesamte NEXUS-Team bedankt sich</p>
+        <p style={{ color:"rgba(255,255,255,0.6)", fontSize:14, margin:0 }}>Das gesamte NEXUS-Team bedankt sich!</p>
       </div>
       <div style={{ display:"flex", gap:16, marginBottom:40, flexWrap:"wrap", justifyContent:"center" }}>
         {CHARS.map((ch, i) => (

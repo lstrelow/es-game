@@ -70,5 +70,5 @@ export const L9 = {
         {text:"Sicherheit ist das entscheidende Kriterium — On-Premise ist immer sicherer als Cloud.",correct:false,feedback:"Sicherheit ist ein wichtiges Kriterium, aber keine pauschale Stärke von On-Premise."},
       ] },
   ],
-  outro:{ charKey:"priya", message:"NEXUS wird hybrid gehen. Das Richtige an der richtigen Stelle — das ist nicht Kompromiss, das ist Strategie. Sie haben jetzt das Rüstzeug um diese Entscheidungen zu verstehen und mitzugestalten.", xp:300, badge:"☁️ Cloud-Strategin" },
+  outro:{ charKey:"priya", message:"NEXUS wird wird eine hybriden Ansatz verfolgen. Das Richtige an der richtigen Stelle — das ist nicht Kompromiss, das ist Strategie. Dank Ihnen haben wir jetzt das benötigte Wissen, um die anstehenden Entscheidungen fundierter treffen zu können.", xp:300, badge:"☁️ Cloud-Strategin" },
 };

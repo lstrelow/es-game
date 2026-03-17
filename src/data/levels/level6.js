@@ -27,7 +27,7 @@ export const L6 = {
         { situation:"Die Bestellung ist ausgeliefert und die Zahlung ist eingegangen — der Prozess ist abgeschlossen.", term:"Endereignis" },
       ] },
     { id:"6_4", type:"definition", charKey:"tom",
-      charMessage:"Nachdem Priya unseren Bestellprozess aufgezeichnet hat, war ich ehrlich gesagt erschrocken. Wir haben 14 Schritte wo 6 reichen würden.",
+      charMessage:"Nachdem Priya unseren Bestellprozess aufgezeichnet hat, war ich ehrlich gesagt erschrocken. Wir haben 14 Schritte, obwohl 6 reichen würden.",
       definition:{ term:"Prozessanalyse: Schwachstellen erkennen", summary:"Die Prozessanalyse identifiziert systematisch Schwachstellen im IST-Prozess. Typische Muster: Medienbrüche, Liegezeiten, Redundanzen, unklare Verantwortlichkeiten.",
         aspects:[{icon:"📠",title:"Medienbruch",text:"Wechsel zwischen analogen und digitalen Systemen — z.B. E-Mail ausdrucken und manuell in Excel übertragen"},{icon:"⏳",title:"Liegezeit",text:"Dokumente oder Aufgaben warten auf Bearbeitung — ohne dass jemand es bemerkt oder nachfragt"},{icon:"🔁",title:"Redundanz",text:"Dieselbe Information wird an mehreren Stellen erfasst oder dieselbe Aufgabe mehrfach ausgeführt"},{icon:"❓",title:"Unklare Verantwortung",text:"Niemand weiß wer für einen Schritt zuständig ist — Aufgaben fallen durch das Raster"}],
         nexusContext:"Im NEXUS-Bestellprozess gibt es alle vier Schwachstellen: E-Mail-Ausdrucke (Medienbruch), Rechnungen die im Postfach liegen (Liegezeit), Kundendaten in Outlook UND Excel (Redundanz), unklare Reklamationszuständigkeit." },
