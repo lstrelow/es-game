@@ -7,7 +7,7 @@ export const L5 = {
     {
       id: "5_1", type: "definition", charKey: "maya",
       charMessage: "Bevor wir IT-Entscheidungen treffen, müssen wir verstehen, in welchem Wettbewerbsumfeld wir uns befinden.",
-      definition:{ term: "Porters Five Forces – Market-Based View", summary: "Das Five-Forces-Modell analysiert die Wettbewerbsintensität einer Branche anhand von fünf Kräften. [Porter]",
+      definition:{ term: "Porters Five Forces – Market-Based View", summary: "Das Five-Forces-Modell analysiert die Wettbewerbsintensität einer Branche anhand von fünf Kräften (Porter, 1979).",
         aspects: [
           { icon: "🆕", title: "Bedrohung durch neue Konkurrenten", text: "Wie leicht können neue Anbieter in den Markt eintreten?" },
           { icon: "🔄", title: "Bedrohung durch Ersatzprodukte", text: "Gibt es alternative Lösungen, die das eigene Angebot überflüssig machen könnten?" },
@@ -45,7 +45,7 @@ export const L5 = {
       definition:{ term: "IT-Strategien: Synergie vs. Flexibilität", summary: "IT-Strategien auf Unternehmensebene bewegen sich auf einem Kontinuum zwischen zwei Polen: synergieorientierte Strategien maximieren Effizienz durch Integration, flexibilitätsorientierte Strategien maximieren Reaktionsgeschwindigkeit durch Autonomie.",
         aspects: [
           { icon: "🔗", title: "Synergieorientiert", text: "Elimination redundanter Funktionen, Shared Services, zentrale Systeme — maximale Effizienz, aber geringere Flexibilität" },
-          { icon: "🔀", title: "Flexibilitätsorientiert", text: "Eigenständige Bereiche, Redundanz als bewusste Entscheidung — maximale Reaktionsgeschwindigkeit, aber höhere Kosten" },
+          { icon: "🔀", title: "Flexibilitätsorientiert", text: "Eigenständige Bereiche, Redundanz als bewusste Entscheidung — maximale Reaktions- geschwindigkeit, aber höhere Kosten" },
           { icon: "⚖️", title: "Abwägung", text: "Kein Pol ist generell besser — die richtige Strategie hängt von Branche, Wachstumsphase und Unternehmensstruktur ab" },
           { icon: "🏢", title: "Kontext", text: "Konzerne tendieren zu Synergie, Startups und Innovatoren zu Flexibilität" }
         ],
@@ -64,7 +64,7 @@ export const L5 = {
           { icon: "📐", title: "Alignment als Zustand", text: "Inwieweit unterstützt die IT die Geschäftsstrategien und -ziele?" },
           { icon: "🔄", title: "Alignment als Prozess", text: "Fortlaufende Abstimmung von Business und IT — kein einmaliges Projekt, sondern kontinuierliche Arbeit" },
           { icon: "👔", title: "Top-Management-Faktor", text: "Die Einstellung des Top-Managements zu IT ist ein kritischer Erfolgsfaktor" },
-          { icon: "🌍", title: "Branchenunterschiede", text: "IT-Beteiligung variiert stark je nach Branche und Unternehmenstyp" }
+          { icon: "🌍", title: "Branchen- unterschiede", text: "IT-Beteiligung variiert stark je nach Branche und Unternehmenstyp" }
         ],
         nexusContext: "Bei NEXUS gibt es kein formales IT-Business-Alignment. Priya entscheidet Systemfragen alleine, Maya entscheidet Strategiefragen alleine — beide sprechen zu selten miteinander." },
       question: "Maya plant eine Expansion nach Frankreich. Priya erfährt davon erst beim Go-Live des neuen Lagersystems — das nur für Deutschland ausgelegt ist. Was ist das Kernproblem?",
@@ -75,7 +75,7 @@ export const L5 = {
       ] },
     {
       id: "5_5", type: "reflection", charKey: "maya",
-      message: "Ich habe heute gelernt, dass IT-Entscheidungen nie isoliert stehen. Sie müssen aus der Wettbewerbsstrategie heraus begründet werden — und IT und Business müssen kontinuierlich miteinander reden.",
+      message: "Ich habe heute gelernt, dass IT-Entscheidungen nie isoliert stehen. Sie müssen aus der Wettbewerbsstrategie heraus begründet werden — und IT und Business müssen sich kontinuierlich abstimmen.",
       question: "Welche Aussage beschreibt das Verhältnis zwischen IT-Strategie und Unternehmensstrategie am treffendsten?",
       answers: [
         { text: "IT-Strategie und Unternehmensstrategie müssen kontinuierlich aufeinander abgestimmt werden — IT kann Strategie ermöglichen, einschränken oder sogar neu definieren.", correct: true, feedback: "Genau. IT-Business-Alignment ist kein einmaliger Akt sondern ein fortlaufender Prozess. Moderne Unternehmen nutzen IT als strategische Ressource." },

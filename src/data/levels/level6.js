@@ -52,7 +52,7 @@ export const L6 = {
       ] },
     {
       id: "6_4", type: "definition", charKey: "tom",
-      charMessage: "Nachdem Priya unseren Bestellprozess aufgezeichnet hat, war ich ehrlich gesagt erschrocken. Wir haben 14 Schritte wo 6 reichen würden.",
+      charMessage: "Nachdem Priya unseren Bestellprozess aufgezeichnet hat, war ich ehrlich gesagt erschrocken. Wir haben 14 Schritte, obwohl 6 reichen würden.",
       definition:{ term: "Prozessanalyse: Schwachstellen erkennen", summary: "Die Prozessanalyse identifiziert systematisch Schwachstellen im IST-Prozess. Typische Muster: Medienbrüche, Liegezeiten, Redundanzen, unklare Verantwortlichkeiten.",
         aspects: [
           { icon: "📠", title: "Medienbruch", text: "Wechsel zwischen analogen und digitalen Systemen — z.B. E-Mail ausdrucken und manuell in Excel übertragen" },

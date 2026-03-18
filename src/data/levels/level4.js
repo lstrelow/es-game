@@ -7,7 +7,7 @@ export const L4 = {
     {
       id: "4_1", type: "definition", charKey: "carlos",
       charMessage: "Ich dachte immer, ein System ist entweder bedienbar oder nicht. Aber es gibt da offenbar eine präzisere Unterscheidung.",
-      definition:{ term: "Usability", summary: "Usability ist das Ausmaß, in dem ein Produkt von bestimmten Nutzern verwendet werden kann, um bestimmte Ziele mit Effektivität, Effizienz und Zufriedenheit in einem bestimmten Nutzungskontext zu erreichen. [ISO 9241-11]",
+      definition:{ term: "Usability", summary: "Usability ist das Ausmaß, in dem ein Produkt von bestimmten Nutzern verwendet werden kann, um bestimmte Ziele mit Effektivität, Effizienz und Zufriedenheit in einem bestimmten Nutzungskontext zu erreichen (ISO 9241-11).",
         aspects: [
           { icon: "🎯", title: "Effektivität", text: "Kann der Nutzer sein Ziel überhaupt erreichen? Wird die Aufgabe korrekt und vollständig ausgeführt?" },
           { icon: "⚡", title: "Effizienz", text: "Wie viel Aufwand braucht der Nutzer dafür? Wenige Klicks, kurze Einarbeitungszeit, minimale Fehler" },
@@ -24,7 +24,7 @@ export const L4 = {
     {
       id: "4_2", type: "definition", charKey: "carlos",
       charMessage: "Ich habe das neue System nicht nur unübersichtlich gefunden — es hat sich einfach falsch angefühlt. Irgendwie kalt, abweisend. Gibt es dafür auch einen Begriff?",
-      definition:{ term: "User Experience (UX)", summary: "User Experience umfasst alle Emotionen, Überzeugungen, Vorlieben, Wahrnehmungen, physischen und psychologischen Reaktionen des Nutzers, die vor, während und nach der Nutzung auftreten. [ISO 9241-210]",
+      definition:{ term: "User Experience (UX)", summary: "User Experience umfasst alle Emotionen, Überzeugungen, Vorlieben, Wahrnehmungen, physischen und psychologischen Reaktionen des Nutzers, die vor, während und nach der Nutzung auftreten (ISO 9241-210).",
         aspects: [
           { icon: "🧠", title: "Vor der Nutzung", text: "Erwartungen, Vorerfahrungen, Markenwahrnehmung — UX beginnt bevor der Nutzer das System öffnet" },
           { icon: "💻", title: "Während der Nutzung", text: "Emotionen, Frustration, Flow-Erleben, kognitive Last" },

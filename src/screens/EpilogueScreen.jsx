@@ -12,11 +12,11 @@ const CHARS = {
 const CHARS_LIST = Object.entries(CHARS).map(([key, v]) => ({ key, ...v }));
 
 const MAYA_SPEECH = [
-  "Sie haben NEXUS Corp durch seine größte Krise geführt.",
-  "Was Sie hier gelernt haben — über Systeme, Prozesse und Menschen — das ist kein Lehrbuchstoff.",
-  "Das ist die Realität jedes Unternehmens da draußen.",
-  "Auf Sie wartet die Welt.",
-  "Viel Erfolg. 🎉",
+  "Vor einem Jahr wusste ich nicht mehr weiter. Wachstum auf allen Seiten — und unsere Systeme brachen unter der Last zusammen.",
+  "Mein Team war erschöpft. Wir haben gekämpft, improvisiert, und trotzdem verloren wir täglich den Überblick. Ich hatte Angst, dass NEXUS Corp an sich selbst scheitert.",
+  "Dann kamen Sie. Als externes Beratungsteam haben Sie uns nicht einfach Lösungen verkauft — Sie haben uns geholfen, unsere eigenen Herausforderungen wirklich zu verstehen.",
+  "Dank Ihnen haben wir heute ein tiefes Verständnis davon, was Enterprise Systems leisten können, wie Prozesse gestaltet werden müssen — und warum der Mensch dabei immer im Mittelpunkt steht.",
+  "Im Namen des gesamten NEXUS-Teams: Danke!",
 ];
 
 function LogoPlaceholder() {

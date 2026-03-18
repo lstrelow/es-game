@@ -43,7 +43,7 @@ export const L7 = {
       charMessage: "Wie entscheiden wir konkret, ob wir einen Prozess anpassen oder die Software? Dafür gibt es Bewertungskriterien.",
       definition:{ term: "Bewertungskriterien für die Handlungsalternativen", summary: "Die Entscheidung wird anhand von drei Dimensionen bewertet: Wirtschaftlichkeitspotenzial, Aufwand und Risiko der Softwareanpassung sowie langfristige Systemauswirkungen.",
         aspects: [
-          { icon: "💰", title: "Wirtschaftlichkeitspotenzial", text: "Welchen Nutzen bringt der Idealprozess? Wie groß ist der Reorganisationsbedarf?" },
+          { icon: "💰", title: "Wirtschaftlichkeits- potenzial", text: "Welchen Nutzen bringt der Idealprozess? Wie groß ist der Reorganisationsbedarf?" },
           { icon: "🔧", title: "Aufwand & Risiko der SW-Anpassung", text: "Wie gut ist die Ausgangsqualität der Softwarelösung? Wie hoch ist der Anpassungsaufwand?" },
           { icon: "📅", title: "Langfristige Systemauswirkung", text: "Wie wirkt sich die Veränderung auf die Release-Politik aus?" },
           { icon: "⚖️", title: "Abwägung", text: "Alle drei Dimensionen müssen gemeinsam bewertet werden" }
