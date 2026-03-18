@@ -26,7 +26,7 @@ export default function App() {
   return (
     <div style={{ fontFamily:"'Segoe UI',system-ui,sans-serif" }}>
       {screen === "title"        && <TitleScreen onStart={() => setScreen("moduleselect")} />}
-      {screen === "moduleselect" && <ModuleSelect onSelect={m => { setModule(m); setScreen("levelmap"); }} />}
+      {screen === "moduleselect" && <ModuleSelect onSelect={m => { setModule(m); setScreen("levelmap"); }} onBack={() => setScreen("title")} />}
       {screen === "levelmap"     && module && (
         <LevelMap
           module={module} completed={completed} maxPlayable={MAX_PLAYABLE_LEVEL}

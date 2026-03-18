@@ -5,13 +5,24 @@ function LogoPlaceholder() {
   return <img src="logo.png" height="32" style={{ display:"block" }} />;
 }
 
-export function ModuleSelect({ onSelect }) {
+export function ModuleSelect({ onSelect, onBack }) {
   return (
     <div style={{ minHeight:"100vh", background:C.bg }}>
-      <div style={{ background:C.bgCard, borderBottom:`1px solid ${C.border}`, padding:"12px 16px", display:"flex", justifyContent:"space-between", alignItems:"center", boxShadow:"0 1px 8px rgba(0,0,0,0.05)" }}>
-        <h2 style={{ color:C.accent, fontSize:"clamp(16px,4vw,22px)", fontWeight:900, margin:0 }}>Modulauswahl</h2>
-        <LogoPlaceholder />
+      <div style={{ background:C.bgCard, borderBottom:`1px solid ${C.border}`, padding:"12px 24px", display:"flex", alignItems:"center", boxShadow:"0 1px 8px rgba(0,0,0,0.05)", position:"relative" }}>
+        {/* Left: NEXUS Corp */}
+        <button onClick={onBack} style={{ background:"none", border:"none", cursor:"pointer", fontFamily:"inherit", padding:0 }}>
+          <span style={{ fontSize:17, fontWeight:900, color:C.text, letterSpacing:-0.5, fontFamily:"Georgia,serif" }}>NEXUS <span style={{ color:C.accent }}>Corp</span></span>
+        </button>
+        {/* Center: title */}
+        <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", textAlign:"center" }}>
+          <span style={{ fontSize:17, fontWeight:700, color:C.accent }}>Modulauswahl</span>
+        </div>
+        {/* Right: logo */}
+        <div style={{ marginLeft:"auto" }}>
+          <LogoPlaceholder />
+        </div>
       </div>
+
       <div style={{ maxWidth:720, margin:"0 auto", padding:"20px 16px" }}>
         <div style={{ display:"flex", flexDirection:"column", gap:16 }}>
           {MODULES.map(mod => (

@@ -20,17 +20,37 @@ export function LevelPlayer({ levelNr, isLastLevel, onBack, onComplete }) {
   const scene = data.scenes[idx];
 
   const next = () => idx < data.scenes.length - 1 ? setIdx(i => i+1) : setPhase("complete");
+
+  const handleBack = () => {
+    if (phase === "intro")                    onBack();
+    else if (phase === "scene" && idx === 0)  setPhase("intro");
+    else if (phase === "scene")               setIdx(i => i - 1);
+    else if (phase === "complete")            setPhase("scene");
+  };
+
   const levelTitle = MODULES[0].levels.find(l => l.id === levelNr)?.title || `Level ${levelNr}`;
 
   return (
     <div style={{ minHeight:"100vh", background:C.bg }}>
-      <div style={{ background:C.bgCard, borderBottom:`1px solid ${C.border}`, padding:"12px 16px", display:"flex", justifyContent:"space-between", alignItems:"center", position:"sticky", top:0, zIndex:10, boxShadow:"0 1px 8px rgba(0,0,0,0.05)" }}>
-        <button onClick={onBack} style={{ color:C.textLight, fontSize:13, background:"none", border:"none", cursor:"pointer", fontFamily:"inherit" }}>← Zurück</button>
-        <div style={{ textAlign:"center" }}>
+      <div style={{ background:C.bgCard, borderBottom:`1px solid ${C.border}`, padding:"12px 24px", display:"flex", alignItems:"center", boxShadow:"0 1px 8px rgba(0,0,0,0.05)", position:"relative" }}>
+        {/* Left: back arrow only */}
+        <button onClick={handleBack}
+          style={{ color:C.textLight, fontSize:20, background:"none", border:"none", cursor:"pointer", fontFamily:"inherit", lineHeight:1, padding:"0 4px" }}>
+          ←
+        </button>
+        {/* Center: level info */}
+        <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)", textAlign:"center" }}>
           <div style={{ color:C.textLight, fontSize:10, textTransform:"uppercase", letterSpacing:"2px" }}>Level {levelNr}</div>
-          <div style={{ color:C.text, fontSize:13, fontWeight:700 }}>{levelTitle}</div>
+          <div style={{ color:C.text, fontSize:17, fontWeight:700 }}>
+            {levelTitle.includes("NEXUS Corp")
+              ? <>{levelTitle.replace("NEXUS Corp", "")}<span style={{ fontFamily:"Georgia,serif" }}>NEXUS <span style={{ color:C.accent }}>Corp</span></span></>
+              : levelTitle}
+          </div>
         </div>
-        <LogoPlaceholder />
+        {/* Right: logo */}
+        <div style={{ marginLeft:"auto" }}>
+          <LogoPlaceholder />
+        </div>
       </div>
 
       <div style={{ maxWidth:640, margin:"0 auto", padding:"20px 16px" }}>
