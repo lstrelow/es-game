@@ -96,7 +96,7 @@ export const L2 = {
         summary: "Ein Informationssystem (genauer: Informations- und Kommunikationssystem) ist ein System, das den Zwecken der Information und Kommunikation dient. IS tragen durch die Repräsentation von interessierenden Aspekten der Realität in Informationen zur Bewältigung betrieblicher Aufgaben bei.",
         aspects: [
           { icon: "📡", title: "Zweck: Information & Kommunikation", text: "IS dienen der Informationsversorgung und der Kommunikation zwischen Aufgabenträgern" },
-          { icon: "🪞", title: "Realitätsrepräsentation", text: "IS bilden Aspekte der Realität in Informationen ab – Modelle der betrieblichen Wirklichkeit" },
+          { icon: "🪞", title: "Realitäts- repräsentation", text: "IS bilden Aspekte der Realität in Informationen ab – Modelle der betrieblichen Wirklichkeit" },
           { icon: "⚙️", title: "Betriebliche Aufgaben", text: "IS tragen zur Bewältigung konkreter betrieblicher Aufgaben bei – es ist kein Selbstzweck" },
           { icon: "👥", title: "Soziotechnisches System", text: "IS umfassen Menschen, Prozesse und Technik – nicht nur Software" }
         ],
