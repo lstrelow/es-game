@@ -35,16 +35,16 @@ export const LEARNING_GOALS = {
     "Aufgabenbasierte Personas und App-Typen in Enterprise Systems",
   ],
   5: [
-    "Porters Five Forces und der Market-Based View",
-    "Resource-Based View und SWOT-Analyse",
-    "IT-Strategien: Synergie vs. Flexibilität",
-    "IT-Business-Alignment als Zustand und Prozess",
-  ],
-  6: [
     "Prozessmanagement: Erfassung, Analyse, Optimierung, Steuerung",
     "BPMN-Grundelemente: Events, Tasks, Gateways, Swimlanes",
     "Typische Prozessschwachstellen: Medienbruch, Liegezeit, Redundanz",
     "Prozessdokumentation als Voraussetzung für ES-Einführung",
+  ],
+  6: [
+    "Porters Five Forces und der Market-Based View",
+    "Resource-Based View und SWOT-Analyse",
+    "IT-Strategien: Synergie vs. Flexibilität",
+    "IT-Business-Alignment als Zustand und Prozess",
   ],
   7: [
     "Handlungsalternativen: Prozessveränderung vs. Softwareveränderung",

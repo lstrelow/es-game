@@ -1,86 +1,92 @@
 export const L6 = {
   intro: {
-    charKey: "tom",
-    message: "Maya hat mich gebeten, den Ablauf einer Kundenbestellung zu dokumentieren. Ich dachte, das dauert eine Stunde. Drei Stunden später hatte ich sieben Seiten Stichpunkte — und es war immer noch nicht vollständig. Wenn ich nicht mal beschreiben kann, wie unser Prozess funktioniert, wie soll dann ein neues System diesen Prozess unterstützen?"
+    charKey: "maya",
+    message: "Wir reden viel über Systeme — aber warum führen Unternehmen überhaupt Enterprise Systems ein? Die Antwort liegt in der Strategie. Systeme sind kein Selbstzweck. Sie müssen zur Wettbewerbssituation passen und die Unternehmensziele unterstützen."
   },
   scenes:[
     {
-      id: "6_1", type: "definition", charKey: "tom",
-      charMessage: "Priya hat mir erklärt, dass es für genau dieses Problem eine eigene Disziplin gibt.",
-      definition:{ term: "Prozessmanagement", summary: "Prozessmanagement umfasst die systematische Erfassung, Dokumentation, Analyse und Optimierung von Geschäftsprozessen. Ziel ist es, Abläufe transparent, steuerbar und kontinuierlich verbesserbar zu machen.",
+      id: "6_1", type: "definition", charKey: "maya",
+      charMessage: "Bevor wir IT-Entscheidungen treffen, müssen wir verstehen, in welchem Wettbewerbsumfeld wir uns befinden.",
+      definition:{ term: "Porters Five Forces – Market-Based View", summary: "Das Five-Forces-Modell analysiert die Wettbewerbsintensität einer Branche anhand von fünf Kräften (Porter, 1979).",
         aspects: [
-          { icon: "🗺️", title: "Prozesserfassung", text: "Welche Schritte gibt es? Wer führt sie aus? In welcher Reihenfolge? — Der IST-Zustand wird sichtbar gemacht" },
-          { icon: "🔍", title: "Prozessanalyse", text: "Wo gibt es Engpässe, Redundanzen, Medienbrüche? Schwachstellen werden identifiziert" },
-          { icon: "🔧", title: "Prozessoptimierung", text: "Der SOLL-Prozess wird gestaltet — schlanker, schneller, fehlerärmer" },
-          { icon: "📊", title: "Prozesssteuerung", text: "Laufende Überwachung: Werden Prozesse wie geplant ausgeführt?" }
+          { icon: "🆕", title: "Bedrohung durch neue Konkurrenten", text: "Wie leicht können neue Anbieter in den Markt eintreten?" },
+          { icon: "🔄", title: "Bedrohung durch Ersatzprodukte", text: "Gibt es alternative Lösungen, die das eigene Angebot überflüssig machen könnten?" },
+          { icon: "🤝", title: "Verhandlungsmacht der Kunden", text: "Können Kunden Preise drücken oder zur Konkurrenz wechseln?" },
+          { icon: "🚚", title: "Verhandlungsmacht der Lieferanten", text: "Können Lieferanten Preise erhöhen oder Lieferungen verweigern?" },
+          { icon: "⚔️", title: "Mitbewerber-Rivalität", text: "Wie intensiv ist der Wettbewerb zwischen bestehenden Anbietern?" }
         ],
-        nexusContext: "Bei NEXUS existieren Prozesse — aber nur als implizites Wissen in den Köpfen der Mitarbeitenden. Das macht Fehlersuche, Einarbeitung und IT-Einführung enorm schwer." },
-      question: "Warum ist Prozessdokumentation eine Voraussetzung für die erfolgreiche Einführung eines ERP-Systems?",
+        nexusContext: "NEXUS Corp steht unter starkem Wettbewerbsdruck: neue Online-Konkurrenten drängen in den Markt, Kunden vergleichen Preise online, und wenige Schlüssellieferanten haben starke Verhandlungsposition." },
+      question: "Priya schlägt vor, ein SCM-System einzuführen um Lieferkosten zu senken. Welche der Five Forces adressiert das direkt?",
       answers: [
-        { text: "Weil ERP-Hersteller wie SAP eine vollständige Prozessdokumentation als Vertragsbestandteil fordern, bevor mit dem Implementierungsprojekt begonnen werden kann.", correct: false, feedback: "Das kann vertraglich der Fall sein, ist aber nicht die konzeptionelle Begründung." },
-        { text: "Weil ein ERP-System Prozesse abbilden und unterstützen muss — ohne zu wissen wie die Prozesse aussehen, kann man das System nicht sinnvoll konfigurieren.", correct: true, feedback: "Genau. Ein ERP muss auf die spezifischen Prozesse des Unternehmens konfiguriert werden. Wer seinen IST-Prozess nicht kennt, kann weder den SOLL-Prozess definieren noch das System richtig einrichten." },
-        { text: "Weil Prozessdokumentation in regulierten Branchen wie Pharma oder Finanzdienstleistungen gesetzlich vorgeschrieben ist und auch für NEXUS als Teil einer zukünftigen Zertifizierung relevant werden könnte.", correct: false, feedback: "In bestimmten Branchen gibt es regulatorische Anforderungen, aber das ist nicht die allgemeine Begründung." }
+        { text: "Bedrohung durch neue Konkurrenten — ein effizientes SCM senkt die eigenen Betriebskosten so weit, dass neue Marktteilnehmer mit höheren Kosten nicht mehr wettbewerbsfähig sein können.", correct: false, feedback: "Das adressiert primär eine andere der fünf Kräfte." },
+        { text: "Mitbewerber-Rivalität — mit einem SCM kann NEXUS schneller und günstiger liefern als die Konkurrenz und sich so einen messbaren Vorteil im direkten Wettbewerb verschaffen.", correct: false, feedback: "Das ist ein indirekter Effekt. Die direkte Verbindung liegt in der Lieferantenbeziehung." },
+        { text: "Verhandlungsmacht der Lieferanten — bessere Transparenz und Planung stärkt NEXUS' Position gegenüber seinen Zulieferern.", correct: true, feedback: "Richtig. Ein SCM-System gibt NEXUS bessere Daten über Bedarfe, Bestände und Alternativen — das stärkt die Verhandlungsposition gegenüber Lieferanten." }
       ] },
     {
-      id: "6_2", type: "definition", charKey: "priya",
-      charMessage: "Prozesse zu beschreiben in Prosa führt zu Missverständnissen — jeder liest es anders. Deshalb gibt es eine standardisierte visuelle Sprache dafür: BPMN.",
-      definition:{ term: "BPMN – Business Process Model and Notation", summary: "BPMN ist ein international standardisierter grafischer Notationsstandard zur Modellierung von Geschäftsprozessen.",
+      id: "6_2", type: "definition", charKey: "maya",
+      charMessage: "Porter erklärt die Branchenattraktivität. Aber warum ist NEXUS innerhalb unserer Branche besser oder schlechter als Konkurrenten? Dafür gibt es einen anderen Blickwinkel.",
+      definition:{ term: "Resource-Based View und SWOT-Analyse", summary: "Der Resource-Based View sieht einzigartige Ressourcen und Kompetenzen als Quelle von Wettbewerbsvorteilen. Die SWOT-Analyse integriert beide Perspektiven: Strengths/Weaknesses (intern, RBV) und Opportunities/Threats (extern, MBV).",
         aspects: [
-          { icon: "⬭", title: "Ereignisse (Events)", text: "Kreise — markieren Start, Ende oder Zwischenereignisse eines Prozesses" },
-          { icon: "▭", title: "Aufgaben (Tasks)", text: "Rechtecke — beschreiben eine konkrete Tätigkeit die ausgeführt wird" },
-          { icon: "◇", title: "Gateways", text: "Rauten — Verzweigungspunkte: XOR (entweder/oder), AND (parallel), OR (mindestens eine Bedingung)" },
-          { icon: "🏊", title: "Swimlanes / Pools", text: "Horizontale Bahnen — zeigen wer welche Aufgabe ausführt: Abteilungen, Rollen, Systeme" }
+          { icon: "💪", title: "Strengths (intern)", text: "Einzigartige Ressourcen und Fähigkeiten — z.B. spezialisiertes Know-how, starke Kundenbeziehungen" },
+          { icon: "⚠️", title: "Weaknesses (intern)", text: "Interne Schwächen — z.B. veraltete Systeme, Fachkräftemangel" },
+          { icon: "🌱", title: "Opportunities (extern)", text: "Chancen im Markt — z.B. neue Technologien, wachsende Kundensegmente" },
+          { icon: "🌩️", title: "Threats (extern)", text: "Bedrohungen — z.B. neue Konkurrenten, regulatorische Änderungen" }
         ],
-        nexusContext: "Mit BPMN kann Priya den chaotischen NEXUS-Bestellprozess so visualisieren, dass Tom, Carlos und die Buchhaltung ihn alle gleich verstehen." },
-      question: "Warum ist ein standardisierter Notationsstandard wie BPMN besser als eine selbst erfundene Prozessdarstellung?",
+        nexusContext: "NEXUS' Stärke liegt im persönlichen Kundenservice und in Toms Logistik-Know-how (RBV). Die Schwäche liegt in den veralteten IT-Systemen." },
+      question: "Priya ist SAP-Expertin — ein weltweit seltenes Profil. Welche strategische Perspektive erklärt, warum das ein Wettbewerbsvorteil für NEXUS ist?",
       answers: [
-        { text: "Weil BPMN als offener Standard kostenlos verfügbar ist und mit kostenlosen Tools wie Camunda oder draw.io genutzt werden kann, ohne dass NEXUS teure Lizenzkosten tragen muss.", correct: false, feedback: "Das stimmt zwar, ist aber nicht die konzeptionelle Begründung." },
-        { text: "Weil ein gemeinsamer Standard sicherstellt, dass alle Beteiligten dasselbe Diagramm gleich lesen und verstehen.", correct: true, feedback: "Genau. Standardisierung löst das Kommunikationsproblem: Ein BPMN-Diagramm ist eindeutig interpretierbar, unabhängig davon wer es liest." },
-        { text: "Weil BPMN von SAP entwickelt wurde und deshalb direkt in ERP-Systeme importiert werden kann.", correct: false, feedback: "BPMN wurde von der Object Management Group (OMG) standardisiert, nicht von SAP." }
+        { text: "SWOT-Analyse — Priyas SAP-Expertise ermöglicht es NEXUS, eine externe Marktchance zu ergreifen: den wachsenden Bedarf an SAP-kompetenten IT-Dienstleistungen für andere Unternehmen.", correct: false, feedback: "Priya ist eine interne Ressource. In der SWOT wäre sie unter Strengths einzuordnen — die zugrunde liegende Perspektive ist der Resource-Based View." },
+        { text: "Market-Based View — weil SAP-Expertise eine branchenweite Markteintrittsbarriere darstellt: Konkurrenten ohne entsprechendes Know-how können nicht so schnell SAP-basierte Systeme einführen.", correct: false, feedback: "Priyas Expertise ist eine interne Ressource — das ist eine andere Perspektive." },
+        { text: "Resource-Based View — weil eine seltene, wertvolle interne Kompetenz einen schwer kopierbaren Wettbewerbsvorteil darstellt.", correct: true, feedback: "Genau. Der RBV erklärt Wettbewerbsvorteile durch einzigartige Ressourcen. Priyas SAP-Expertise ist wertvoll, selten und schwer imitierbar." }
       ] },
     {
-      id: "6_3", type: "matching", charKey: "priya",
-      charMessage: "Schauen wir uns den NEXUS-Bestellprozess an. Ordnen Sie jeden Schritt dem richtigen BPMN-Element zu.",
-      instruction: "Klicken Sie zuerst ein BPMN-Element, dann den passenden Prozessschritt.",
-      pairs: [
-        { situation: "Carlos wickelt den Auftrag ab, Tom steuert das Lager, die Buchhaltung verarbeitet die Zahlung.", term: "Swimlanes" },
-        { situation: "Gleichzeitig erstellt die Buchhaltung die Rechnung und das Lager bereitet den Versand vor.", term: "AND-Gateway" },
-        { situation: "Die Bestellung ist ausgeliefert und die Zahlung ist eingegangen — der Prozess ist abgeschlossen.", term: "Endereignis" },
-        { situation: "Carlos prüft, ob der Kunde bereits in der Datenbank erfasst ist.", term: "Task" },
-        { situation: "Der Prozess beginnt, wenn eine Kundenbestellung per E-Mail eingeht.", term: "Startereignis" },
-        { situation: "Ist der Bestand ausreichend? Falls ja → Versand. Falls nein → Nachbestellung.", term: "XOR-Gateway" }
+      id: "6_3", type: "definition", charKey: "maya",
+      charMessage: "Wenn ich entscheide, welche IT-Strategie wir bei NEXUS verfolgen, stehe ich immer vor derselben Grundfrage: Wollen wir Synergien — oder Flexibilität?",
+      definition:{ term: "IT-Strategien: Synergie vs. Flexibilität", summary: "IT-Strategien auf Unternehmensebene bewegen sich auf einem Kontinuum zwischen zwei Polen: synergieorientierte Strategien maximieren Effizienz durch Integration, flexibilitätsorientierte Strategien maximieren Reaktionsgeschwindigkeit durch Autonomie.",
+        aspects: [
+          { icon: "🔗", title: "Synergieorientiert", text: "Elimination redundanter Funktionen, Shared Services, zentrale Systeme — maximale Effizienz, aber geringere Flexibilität" },
+          { icon: "🔀", title: "Flexibilitätsorientiert", text: "Eigenständige Bereiche, Redundanz als bewusste Entscheidung — maximale Reaktions- geschwindigkeit, aber höhere Kosten" },
+          { icon: "⚖️", title: "Abwägung", text: "Kein Pol ist generell besser — die richtige Strategie hängt von Branche, Wachstumsphase und Unternehmensstruktur ab" },
+          { icon: "🏢", title: "Kontext", text: "Konzerne tendieren zu Synergie, Startups und Innovatoren zu Flexibilität" }
+        ],
+        nexusContext: "NEXUS Corp steht an einem Wendepunkt: Als wachsendes Unternehmen braucht es Synergien — aber zu viel Standardisierung raubt die Flexibilität, die NEXUS im Wettbewerb unterscheidet." },
+      question: "NEXUS führt ein zentrales ERP für alle Abteilungen ein. Tom besteht darauf, seine Access-Datenbank weiter zu nutzen. Welche IT-Strategie-Logik steckt hinter seinem Widerstand?",
+      answers: [
+        { text: "Tom denkt flexibilitätsorientiert — seine eigene Lösung gibt ihm Reaktionsgeschwindigkeit und Kontrolle, auch wenn sie Redundanz erzeugt.", correct: true, feedback: "Genau. Toms Access-Datenbank ist aus seiner Sicht ein Flexibilitätsvorteil: Er kann sie sofort anpassen und ist nicht von zentralen IT-Entscheidungen abhängig." },
+        { text: "Tom hat keine formale IT-Strategie, sondern reagiert intuitiv auf operative Probleme — sein Handeln ist pragmatisch und erfahrungsbasiert, aber nicht strategisch geplant.", correct: false, feedback: "Toms Verhalten folgt einer rationalen Logik: Er schützt seine operative Handlungsfähigkeit." },
+        { text: "Tom verfolgt eine synergieorientierte Strategie, indem er das zentrale ERP für alle Kernprozesse nutzen möchte und dadurch Redundanzen in der IT-Landschaft von NEXUS abbaut.", correct: false, feedback: "Toms Widerstand ist das Gegenteil von Synergie." }
       ] },
     {
-      id: "6_4", type: "definition", charKey: "tom",
-      charMessage: "Nachdem Priya unseren Bestellprozess aufgezeichnet hat, war ich ehrlich gesagt erschrocken. Wir haben 14 Schritte, obwohl 6 reichen würden.",
-      definition:{ term: "Prozessanalyse: Schwachstellen erkennen", summary: "Die Prozessanalyse identifiziert systematisch Schwachstellen im IST-Prozess. Typische Muster: Medienbrüche, Liegezeiten, Redundanzen, unklare Verantwortlichkeiten.",
+      id: "6_4", type: "definition", charKey: "priya",
+      charMessage: "Das größte Problem in meiner Karriere war nie die Technik — es war immer die Abstimmung zwischen IT und Business.",
+      definition:{ term: "IT-Business-Alignment", summary: "IT-Business-Alignment bezeichnet die Abstimmung zwischen IT und Unternehmensstrategie — sowohl als Zustand (inwieweit unterstützt die IT die Geschäftsziele?) als auch als fortlaufender Prozess.",
         aspects: [
-          { icon: "📠", title: "Medienbruch", text: "Wechsel zwischen analogen und digitalen Systemen — z.B. E-Mail ausdrucken und manuell in Excel übertragen" },
-          { icon: "⏳", title: "Liegezeit", text: "Dokumente oder Aufgaben warten auf Bearbeitung — ohne dass jemand es bemerkt oder nachfragt" },
-          { icon: "🔁", title: "Redundanz", text: "Dieselbe Information wird an mehreren Stellen erfasst oder dieselbe Aufgabe mehrfach ausgeführt" },
-          { icon: "❓", title: "Unklare Verantwortung", text: "Niemand weiß wer für einen Schritt zuständig ist — Aufgaben fallen durch das Raster" }
+          { icon: "📐", title: "Alignment als Zustand", text: "Inwieweit unterstützt die IT die Geschäftsstrategien und -ziele?" },
+          { icon: "🔄", title: "Alignment als Prozess", text: "Fortlaufende Abstimmung von Business und IT — kein einmaliges Projekt, sondern kontinuierliche Arbeit" },
+          { icon: "👔", title: "Top-Management-Faktor", text: "Die Einstellung des Top-Managements zu IT ist ein kritischer Erfolgsfaktor" },
+          { icon: "🌍", title: "Branchen- unterschiede", text: "IT-Beteiligung variiert stark je nach Branche und Unternehmenstyp" }
         ],
-        nexusContext: "Im NEXUS-Bestellprozess gibt es alle vier Schwachstellen: E-Mail-Ausdrucke (Medienbruch), Rechnungen die im Postfach liegen (Liegezeit), Kundendaten in Outlook UND Excel (Redundanz), unklare Reklamationszuständigkeit." },
-      question: "Eine Kundenbestellung geht per E-Mail bei Carlos ein. Er druckt sie aus und gibt sie Tom, der sie in seine Access-Datenbank einträgt. Was ist das für eine Prozessschwachstelle?",
+        nexusContext: "Bei NEXUS gibt es kein formales IT-Business-Alignment. Priya entscheidet Systemfragen alleine, Maya entscheidet Strategiefragen alleine — beide sprechen zu selten miteinander." },
+      question: "Maya plant eine Expansion nach Frankreich. Priya erfährt davon erst beim Go-Live des neuen Lagersystems — das nur für Deutschland ausgelegt ist. Was ist das Kernproblem?",
       answers: [
-        { text: "Medienbruch — die Information wechselt von digital (E-Mail) über analog (Ausdruck) zurück zu digital (Access), was Fehler und Aufwand erzeugt.", correct: true, feedback: "Klassischer Medienbruch. Jeder Wechsel des Mediums ist eine potenzielle Fehlerquelle und immer unnötiger Aufwand." },
-        { text: "Liegezeit — zwischen dem Ausdrucken und dem manuellen Eintippen der Bestellung entsteht eine unnötige Wartezeit, die den gesamten Auftragsabwicklungsprozess verlangsamt.", correct: false, feedback: "Liegezeit wäre das Problem, wenn die Bestellung irgendwo unbearbeitet liegt. Hier findet aktive Bearbeitung statt." },
-        { text: "Redundanz — die Bestellinformation existiert gleichzeitig in der E-Mail, auf dem Ausdruck und in der Access-Datenbank, was bei Änderungen zu Inkonsistenzen führen kann.", correct: false, feedback: "Redundanz wäre es, wenn Carlos UND Tom dieselbe Information separat speichern. Das Problem hier ist der Übertragungsweg selbst." }
+        { text: "Maya hätte ein günstigeres System wählen sollen das leichter anpassbar ist.", correct: false, feedback: "Die Systemwahl ist ein Symptom, nicht die Ursache." },
+        { text: "Fehlendes IT-Business-Alignment: Die IT-Strategie wurde nicht mit der Geschäftsstrategie abgestimmt.", correct: true, feedback: "Genau. IT-Business-Alignment als Prozess würde bedeuten, dass strategische Entscheidungen wie eine Länderexpansion automatisch die IT-Planung beeinflussen." },
+        { text: "Priya hat bei der Systemauswahl einen schwerwiegenden Fehler gemacht, indem sie die Anforderungen der internationalen Expansion nicht im Vorfeld mit der Geschäftsführung abgestimmt hat.", correct: false, feedback: "Priya kann keine Anforderungen berücksichtigen, die ihr niemand mitgeteilt hat." }
       ] },
     {
       id: "6_5", type: "reflection", charKey: "maya",
-      message: "Priya hat mir heute den IST-Prozess unserer Bestellabwicklung gezeigt — als BPMN-Diagramm. Ich habe ihn zum ersten Mal wirklich verstanden. Jetzt sehen wir genau, wo das neue ERP ansetzen muss.",
-      question: "Was ist der wichtigste Unterschied zwischen einem dokumentierten und einem undokumentierten Prozess im Kontext einer ES-Einführung?",
+      message: "Ich habe heute gelernt, dass IT-Entscheidungen nie isoliert stehen. Sie müssen aus der Wettbewerbsstrategie heraus begründet werden — und IT und Business müssen sich kontinuierlich abstimmen.",
+      question: "Welche Aussage beschreibt das Verhältnis zwischen IT-Strategie und Unternehmensstrategie am treffendsten?",
       answers: [
-        { text: "Dokumentierte Prozesse sind stabiler und resistenter gegen Veränderungen, weil alle Beteiligten wissen wie der Prozess funktionieren soll und Abweichungen sofort erkannt werden.", correct: false, feedback: "Stabilität hängt nicht von der Dokumentation ab. Undokumentierte Prozesse sind nicht steuerbar, nicht übertragbar und nicht optimierbar." },
-        { text: "Nur dokumentierte Prozesse können systematisch analysiert, optimiert und in einem ES konfiguriert werden — undokumentierte Prozesse bleiben Blackboxen.", correct: true, feedback: "Genau. Prozessdokumentation ist die Grundlage für alles Weitere: Nur was sichtbar ist, kann verbessert werden. Und nur was beschrieben ist, kann in einem System abgebildet werden." },
-        { text: "Dokumentierte Prozesse laufen schneller ab, weil Mitarbeitende nicht jedes Mal neu entscheiden müssen wie sie vorgehen sollen, sondern einer klaren Schritt-für-Schritt-Anleitung folgen.", correct: false, feedback: "Dokumentation verändert nicht automatisch die Prozessgeschwindigkeit." }
+        { text: "IT-Strategie und Unternehmensstrategie müssen kontinuierlich aufeinander abgestimmt werden — IT kann Strategie ermöglichen, einschränken oder sogar neu definieren.", correct: true, feedback: "Genau. IT-Business-Alignment ist kein einmaliger Akt sondern ein fortlaufender Prozess. Moderne Unternehmen nutzen IT als strategische Ressource." },
+        { text: "IT-Strategie und Unternehmensstrategie sind grundsätzlich getrennte Domänen — die IT-Abteilung kennt die technischen Möglichkeiten am besten und sollte in ihrem Bereich autonom entscheiden können, ohne sich ständig mit dem Business abstimmen zu müssen.", correct: false, feedback: "Autonomie der IT ohne strategische Abstimmung ist genau das Problem, das IT-Business-Alignment lösen soll." },
+        { text: "IT-Strategie wird durch die Unternehmensstrategie vorgegeben — die IT-Abteilung hat die Aufgabe, die vom Business definierten Ziele durch geeignete Technologieentscheidungen zu unterstützen und umzusetzen.", correct: false, feedback: "Das greift zu kurz. IT kann nicht nur Strategie umsetzen, sondern auch Strategie ermöglichen oder sogar verändern." }
       ] },
   ],
   outro: {
-    charKey: "tom",
-    message: "Ich habe mein ganzes Berufsleben Prozesse im Kopf getragen. Jetzt sehe ich, dass das kein Stärke war — sondern ein Risiko für das Unternehmen. Was in meinem Kopf ist, gehört in ein Diagramm.",
-    xp: 280,
-    badge: "🔄 Prozessdenker"
+    charKey: "maya",
+    message: "Systeme einzuführen ohne Strategie ist wie navigieren ohne Karte. Sie wissen jetzt, warum wir IT-Entscheidungen immer im strategischen Kontext betrachten müssen.",
+    xp: 300,
+    badge: "🧭 Strategie-Denkerin"
   },
 };
