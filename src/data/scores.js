@@ -1,3 +1,3 @@
 export const COHORT_SCORES = {
-  "SS26": 7,
+  "SS26": 10,
 };
