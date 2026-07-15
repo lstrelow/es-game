@@ -226,7 +226,7 @@ export function EpilogueScreen({ epilogue, moduleTitle, onBack }) {
             </div>
             <button onClick={onBack}
               style={{ width:"100%", padding:"14px", borderRadius:13, background:"transparent", color:C.textMid, fontSize:13, fontWeight:600, border:`1px solid ${C.border}`, cursor:"pointer", fontFamily:"inherit" }}>
-              Zurück zur Modulübersicht
+              Zurück zur Levelübersicht
             </button>
           </div>
         ) : (
