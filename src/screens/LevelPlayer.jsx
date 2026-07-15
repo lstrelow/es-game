@@ -4,29 +4,29 @@ import { C } from "../theme.js";
 import { MODULES } from "../data/modules.js";
 import { LEVEL_DATA, LEARNING_GOALS } from "../data/levels/index.js";
 import { SpeechBubble, Avatar } from "../components/ui/index.jsx";
-import { SceneCompany }    from "../components/scenes/SceneCompany.jsx";
-import { ScenePersona }    from "../components/scenes/ScenePersona.jsx";
+import { SceneCompany } from "../components/scenes/SceneCompany.jsx";
+import { ScenePersona } from "../components/scenes/ScenePersona.jsx";
 import { SceneReflection } from "../components/scenes/SceneReflection.jsx";
 import { SceneDefinition } from "../components/scenes/SceneDefinition.jsx";
-import { SceneMatching }   from "../components/scenes/SceneMatching.jsx";
+import { SceneMatching } from "../components/scenes/SceneMatching.jsx";
 
 function LogoPlaceholder() {
   return <img src="logo.png" alt="NEXUS Corp" height="32" style={{ display:"block" }} />;
 }
 
 export function LevelPlayer({ levelNr, isLastLevel, onBack, onComplete, streakActive, currentStreak, onAnswer }) {
-  const data  = LEVEL_DATA[levelNr];
+  const data = LEVEL_DATA[levelNr];
   const [phase, setPhase] = useState("intro");
-  const [idx,   setIdx]   = useState(0);
+  const [idx, setIdx] = useState(0);
   const scene = data.scenes[idx];
 
   const next = () => idx < data.scenes.length - 1 ? setIdx(i => i+1) : setPhase("complete");
 
   const handleBack = () => {
-    if (phase === "intro")                    onBack();
-    else if (phase === "scene" && idx === 0)  setPhase("intro");
-    else if (phase === "scene")               setIdx(i => i - 1);
-    else if (phase === "complete")            setPhase("scene");
+    if (phase === "intro") onBack();
+    else if (phase === "scene" && idx === 0) setPhase("intro");
+    else if (phase === "scene") setIdx(i => i - 1);
+    else if (phase === "complete") setPhase("scene");
   };
 
   const levelTitle = MODULES[0].levels.find(l => l.id === levelNr)?.title || `Level ${levelNr}`;
@@ -76,11 +76,11 @@ export function LevelPlayer({ levelNr, isLastLevel, onBack, onComplete, streakAc
 
         {phase === "scene" && scene && (
           <>
-            {scene.type === "company"    && <SceneCompany    key={scene.id} scene={scene} onNext={next}/>}
-            {scene.type === "persona"    && <ScenePersona    key={scene.id} scene={scene} onNext={next} onAnswer={onAnswer}/>}
+            {scene.type === "company" && <SceneCompany key={scene.id} scene={scene} onNext={next}/>}
+            {scene.type === "persona" && <ScenePersona key={scene.id} scene={scene} onNext={next} onAnswer={onAnswer}/>}
             {scene.type === "reflection" && <SceneReflection key={scene.id} scene={scene} onNext={next} onAnswer={onAnswer}/>}
             {scene.type === "definition" && <SceneDefinition key={scene.id} scene={scene} onNext={next} onAnswer={onAnswer}/>}
-            {scene.type === "matching"   && <SceneMatching   key={scene.id} scene={scene} onNext={next} onAnswer={onAnswer}/>}
+            {scene.type === "matching" && <SceneMatching key={scene.id} scene={scene} onNext={next} onAnswer={onAnswer}/>}
           </>
         )}
 

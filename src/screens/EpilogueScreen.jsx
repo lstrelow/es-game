@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import { C } from "../theme.js";
 
 const CHARS = {
-  maya:   { emoji:"👩‍💼", name:"Maya Chen",    role:"CEO & Gründerin",           color:"#ed6e45" },
-  tom:    { emoji:"👨‍🔧", name:"Tom Becker",   role:"Leiter Betrieb & Logistik", color:"#8e7a65" },
-  carlos: { emoji:"👨‍💻", name:"Carlos Ruiz",  role:"Vertriebsleiter",           color:"#2563EB" },
-  lena:   { emoji:"👩‍🔬", name:"Lena Fischer", role:"BI-Analystin",              color:"#065F46" },
-  priya:  { emoji:"👩‍💻", name:"Priya Nair",   role:"IT-Architektin",            color:"#7C3AED" },
+  maya: { emoji:"👩‍💼", name:"Maya Chen", role:"CEO & Gründerin", color:"#ed6e45" },
+  tom: { emoji:"👨‍🔧", name:"Tom Becker", role:"Leiter Betrieb & Logistik", color:"#8e7a65" },
+  carlos: { emoji:"👨‍💻", name:"Carlos Ruiz", role:"Vertriebsleiter", color:"#2563EB" },
+  lena: { emoji:"👩‍🔬", name:"Lena Fischer", role:"BI-Analystin", color:"#065F46" },
+  priya: { emoji:"👩‍💻", name:"Priya Nair", role:"IT-Architektin", color:"#7C3AED" },
 };
 
 const CHARS_LIST = Object.entries(CHARS).map(([key, v]) => ({ key, ...v }));
@@ -163,7 +163,7 @@ function FireworkCanvas() {
 
 export function EpilogueScreen({ epilogue, moduleTitle, onBack }) {
   const [phase, setPhase] = useState("animation");
-  const [idx,   setIdx]   = useState(0);
+  const [idx, setIdx] = useState(0);
   const [slideDir, setSlideDir] = useState("in");
   const [showFireworks, setShowFireworks] = useState(false);
   const done = idx >= epilogue.scenes.length;
