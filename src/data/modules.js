@@ -5,7 +5,7 @@ export const MODULES = [
     id: "m1",
     title: "Enterprise Systems",
     subtitle: "Bachelor-Modul",
-    phase: "🌱 Von der Idee zum Mittelstand",
+    phase: "🌱 Mittelstand",
     color: C.accent,
     description: "NEXUS Corp wächst rasant. Prozesse sind manuell und chaotisch. Helfen Sie dabei, die ersten Unternehmenssysteme einzuführen.",
     levels: [
