@@ -47,13 +47,6 @@ function AnimatedScene({ onDone }) {
     }
   }, [step]);
 
-  useEffect(() => {
-    if (step < CHARS_LIST.length) return;
-    if (speechIdx >= MAYA_SPEECH.length - 1) return;
-    const t = setTimeout(() => goTo(speechIdx + 1), 2800);
-    return () => clearTimeout(t);
-  }, [step, speechIdx]);
-
   const goTo = (i) => {
     setSlideDir("out");
     setTimeout(() => { setSpeechIdx(i); setSlideDir("in"); }, 300);
