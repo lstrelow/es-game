@@ -29,7 +29,7 @@ export const L9 = {
           { icon: "🏢", title: "Private Cloud", text: "Beschränkter Zugang — vergleichbar mit einem Intranet. Ressourcen im firmeneigenen Rechenzentrum. Hohe Kontrolle, aber auch hohe Kosten." },
           { icon: "☁️", title: "Public Cloud", text: "Öffentlich zugänglicher IT-Ressourcen-Pool — bei AWS, Azure, Google. Günstig und skalierbar, aber weniger Kontrolle." },
           { icon: "🔀", title: "Hybrid Cloud", text: "Mischform aus Private und Public Cloud — häufigster Einsatz in der Praxis. Geschäftskritisches intern, Unkritisches ausgelagert." },
-          { icon: "⚖️", title: "Abwägung", text: "Die Wahl hängt von Datenschutzanforderungen, Compliance, Kosten und dem Bedarf nach Flexibilität ab" }
+          { icon: "⚖️", title: "Abwägung", text: "Die Wahl hängt von Datenschutz- anforderungen, Compliance, Kosten und dem Bedarf nach Flexibilität ab" }
         ],
         nexusContext: "Priyas Empfehlung für NEXUS: Hybrid Cloud. SAP Finanzdaten und Kundendaten bleiben On-Premise (Datenschutz), Entwicklungs- und Testumgebungen gehen in die Public Cloud." },
       question: "NEXUS speichert sensible Kundendaten und muss DSGVO-Anforderungen erfüllen. Welche Cloud-Form ist am geeignetsten?",
