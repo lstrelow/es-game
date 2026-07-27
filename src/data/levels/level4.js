@@ -1,7 +1,7 @@
 export const L4 = {
   intro: {
     charKey: "carlos",
-    message: "Ich habe letzte Woche das neue Bestellsystem ausprobiert, das Priya vorgeschlagen hat. Nach 20 Minuten habe ich aufgegeben — zu viele Klicks, zu unübersichtlich. Dabei soll das System uns das Leben leichter machen! Maya sagt, das ist kein Einzelfall. Offenbar gibt es dafür sogar wissenschaftliche Konzepte."
+    message: "Ich habe letzte Woche das neue Bestellsystem ausprobiert, das Priya vorgeschlagen hat. Nach 20 Minuten habe ich aufgegeben. Zu viele Klicks, zu unübersichtlich. Dabei soll das System uns das Leben leichter machen! Maya sagt, das ist kein Einzelfall. Offenbar gibt es dafür sogar wissenschaftliche Konzepte."
   },
   scenes: [
     {
@@ -14,78 +14,78 @@ export const L4 = {
           { icon: "😊", title: "Zufriedenheit", text: "Wie fühlt sich die Nutzung an? Ist das System angenehm, akzeptabel, frustrationsfrei?" },
           { icon: "📌", title: "Kontext", text: "Usability ist immer relativ: Ein System kann für eine Nutzergruppe sehr usable sein, für eine andere gar nicht" }
         ],
-        nexusContext: "Carlos scheitert an der Bestellsoftware nicht weil er inkompetent ist — sondern weil das System für seine Aufgaben und seinen Nutzungskontext nicht optimiert wurde. Das ist ein Usability-Problem." },
+        nexusContext: "Carlos scheitert an der Bestellsoftware nicht, weil er inkompetent ist, sondern weil das System für seine Aufgaben und seinen Nutzungskontext nicht optimiert wurde. Das ist ein Usability-Problem." },
       question: "Carlos braucht 15 Klicks um eine Bestellung aufzugeben. Tom schafft es in 4 Klicks mit seiner Access-Datenbank. Was sagt das über Usability aus?",
       answers: [
-        { text: "Carlos' System hat schlechte Usability, weil der Hersteller zu wenig in die Benutzeroberfläche investiert hat — teure Systeme neigen dazu, Funktionsreichtum über Bedienbarkeit zu stellen.", correct: false, feedback: "Kosten haben keinen direkten Einfluss auf Usability." },
+        { text: "Carlos' System hat schlechte Usability, weil der Hersteller zu wenig in die Benutzeroberfläche investiert hat. Teure Systeme neigen dazu, Funktionsreichtum über Bedienbarkeit zu stellen.", correct: false, feedback: "Kosten haben keinen direkten Einfluss auf Usability." },
         { text: "15 Klicks sind bei komplexen Enterprise-Systemen durchaus üblich, da diese viele Sicherheitsprüfungen, Genehmigungsschritte und Validierungen eingebaut haben, die sich nicht reduzieren lassen.", correct: false, feedback: "Das ist eine weit verbreitete Fehlannahme. Moderne UX-Ansätze zeigen, dass es besser geht." },
-        { text: "Toms Access-Datenbank hat für seine Aufgaben bessere Effizienz — Carlos' System hat schlechte Usability, weil der Aufwand nicht zum Nutzungskontext passt.", correct: true, feedback: "Genau. Usability ist kontextabhängig: Toms selbstgebaute Lösung ist für seine spezifischen Aufgaben effizient. Carlos' neues System wurde offensichtlich nicht für seinen Nutzungskontext optimiert." }
+        { text: "Toms Access-Datenbank hat für seine Aufgaben bessere Effizienz. Carlos' System hat schlechte Usability, weil der Aufwand nicht zum Nutzungskontext passt.", correct: true, feedback: "Genau. Usability ist kontextabhängig: Toms selbstgebaute Lösung ist für seine spezifischen Aufgaben effizient. Carlos' neues System wurde offensichtlich nicht für seinen Nutzungskontext optimiert." }
       ] },
     {
       id: "4_2", type: "definition", charKey: "carlos",
-      charMessage: "Ich habe das neue System nicht nur unübersichtlich gefunden — es hat sich einfach falsch angefühlt. Irgendwie kalt, abweisend. Gibt es dafür auch einen Begriff?",
+      charMessage: "Ich habe das neue System nicht nur unübersichtlich gefunden, es hat sich einfach falsch angefühlt. Irgendwie kalt, abweisend. Gibt es dafür auch einen Begriff?",
       definition:{ term: "User Experience (UX)", summary: "User Experience umfasst alle Emotionen, Überzeugungen, Vorlieben, Wahrnehmungen, physischen und psychologischen Reaktionen des Nutzers, die vor, während und nach der Nutzung auftreten (ISO 9241-210).",
         aspects: [
-          { icon: "🧠", title: "Vor der Nutzung", text: "Erwartungen, Vorerfahrungen, Markenwahrnehmung — UX beginnt bevor der Nutzer das System öffnet" },
+          { icon: "🧠", title: "Vor der Nutzung", text: "Erwartungen, Vorerfahrungen, Markenwahrnehmung: UX beginnt, bevor der Nutzer das System öffnet" },
           { icon: "💻", title: "Während der Nutzung", text: "Emotionen, Frustration, Flow-Erleben, kognitive Last" },
-          { icon: "💭", title: "Nach der Nutzung", text: "Erinnerung, Weiterempfehlung, Wiederkehr — was bleibt beim Nutzer hängen?" },
+          { icon: "💭", title: "Nach der Nutzung", text: "Erinnerung, Weiterempfehlung, Wiederkehr: Was bleibt beim Nutzer hängen?" },
           { icon: "🎨", title: "Mehr als Usability", text: "UX umfasst auch Ästhetik, hedonistische Aspekte, Emotion" }
         ],
         nexusContext: "Carlos' Reaktion auf das neue System ist eine UX-Reaktion: Er hat das System nicht nur als ineffizient erlebt, sondern als unangenehm. Diese emotionale Dimension ist entscheidend für die tatsächliche Nutzungsbereitschaft." },
       question: "Was ist der Unterschied zwischen Usability und User Experience?",
       answers: [
-        { text: "Usability und UX werden in der Praxis oft synonym verwendet, da beide letztlich die Qualität der Interaktion zwischen Nutzer und System beschreiben und sich gegenseitig bedingen.", correct: false, feedback: "Das ist ein häufiges Missverständnis. UX ist der umfassendere Begriff — Usability ist eine notwendige, aber nicht hinreichende Bedingung für positive UX." },
-        { text: "Usability ist Voraussetzung für positive UX, reicht aber alleine nicht aus — UX umfasst zusätzlich emotionale, ästhetische und erfahrungsbezogene Aspekte.", correct: true, feedback: "Genau diese Hierarchie beschreibt die Vorlesung: Ein System kann sehr usable sein und trotzdem schlechte UX haben." },
-        { text: "UX hat in modernen Systemen Vorrang, weil Nutzer heute hohe ästhetische und emotionale Erwartungen an Software haben — ein schönes System wird eher genutzt als ein nur funktionales.", correct: false, feedback: "Die Bedürfnispyramide zeigt: Funktionalität und Usability sind die Basis — ohne sie hat UX keinen Boden." }
+        { text: "Usability und UX werden in der Praxis oft synonym verwendet, da beide letztlich die Qualität der Interaktion zwischen Nutzer und System beschreiben und sich gegenseitig bedingen.", correct: false, feedback: "Das ist ein häufiges Missverständnis. UX ist der umfassendere Begriff. Usability ist eine notwendige, aber nicht hinreichende Bedingung für positive UX." },
+        { text: "Usability ist Voraussetzung für positive UX, reicht aber alleine nicht aus. UX umfasst zusätzlich emotionale, ästhetische und erfahrungsbezogene Aspekte.", correct: true, feedback: "Genau diese Hierarchie beschreibt die Vorlesung: Ein System kann sehr usable sein und trotzdem schlechte UX haben." },
+        { text: "UX hat in modernen Systemen Vorrang, weil Nutzer heute hohe ästhetische und emotionale Erwartungen an Software haben, ein schönes System wird eher genutzt als ein nur funktionales.", correct: false, feedback: "Die Bedürfnispyramide zeigt: Funktionalität und Usability sind die Basis. Ohne sie hat UX keinen Boden." }
       ] },
     {
       id: "4_3", type: "definition", charKey: "priya",
-      charMessage: "Als ich bei SAP-Projekten gearbeitet habe, war das größte Problem nie die Technik — sondern dass die Nutzer das System nach dem Go-Live kaum verwendet haben. Die Bedürfnispyramide erklärt warum.",
+      charMessage: "Als ich bei SAP-Projekten gearbeitet habe, war das größte Problem nie die Technik, sondern dass die Nutzer das System nach dem Go-Live kaum verwendet haben. Die Bedürfnispyramide erklärt warum.",
       definition:{ term: "Bedürfnispyramide der Nutzererfahrung", pyramid: true, summary: "Die Bedürfnispyramide beschreibt, wie Nutzerbedürfnisse aufeinander aufbauen: von grundlegender Sicherheit über Funktionalität und Usability bis hin zu positiver Erfahrung und Individualisierung. Jede Ebene ist Voraussetzung für die nächste.",
         aspects: [
-          { icon: "🔒", title: "1. Safety", text: "Grundlegende Sicherheit und Verlässlichkeit — das System darf keine Daten verlieren oder abstürzen" },
+          { icon: "🔒", title: "1. Safety", text: "Grundlegende Sicherheit und Verlässlichkeit: Das System darf keine Daten verlieren oder abstürzen" },
           { icon: "⚙️", title: "2. Functionality", text: "Das System muss die benötigten Funktionen bereitstellen" },
           { icon: "🖱️", title: "3. Usability", text: "Die Funktionen müssen effektiv, effizient und zufriedenstellend nutzbar sein" },
           { icon: "✨", title: "4. Pleasurable Experience", text: "Die Nutzung soll angenehm, motivierend und emotional positiv sein" },
-          { icon: "👤", title: "5. Individuation", text: "Das System passt sich dem Nutzer an — persönliche Präferenzen, Rollen, Arbeitsweisen" }
+          { icon: "👤", title: "5. Individuation", text: "Das System passt sich dem Nutzer an: persönliche Präferenzen, Rollen, Arbeitsweisen" }
         ],
         nexusContext: "SAP hatte jahrzehntelang die unteren drei Ebenen im Fokus. Die oberen zwei Ebenen wurden lange vernachlässigt, was zu überladenen UIs und langen Einarbeitungszeiten führte." },
-      question: "NEXUS evaluiert ein ERP-System. Es ist technisch stabil und hat alle benötigten Funktionen — Tom testet es und sagt: 'Das Ding macht mich wahnsinnig, ich brauche ewig für eine einfache Buchung.' Auf welcher Ebene der Bedürfnispyramide liegt das Problem?",
+      question: "NEXUS evaluiert ein ERP-System. Es ist technisch stabil und hat alle benötigten Funktionen. Tom testet es und sagt: 'Das Ding macht mich wahnsinnig, ich brauche ewig für eine einfache Buchung.' Auf welcher Ebene der Bedürfnispyramide liegt das Problem?",
       answers: [
-        { text: "Ebene 5 (Individuation) — das System lässt sich nicht an Toms Arbeitsweise anpassen.", correct: false, feedback: "Individuation ist die höchste Ebene — sie setzt voraus, dass Usability bereits erfüllt ist. Toms Problem ist grundlegender." },
-        { text: "Ebene 1 (Safety) — technische Instabilität ist die häufigste Ursache für Nutzerfrust, da Abstürze und Datenverluste das Vertrauen in das System nachhaltig beschädigen.", correct: false, feedback: "Stabilität ist laut Aufgabenstellung gegeben. Toms Problem liegt auf einer anderen Ebene." },
-        { text: "Ebene 3 (Usability) — das System hat die nötigen Funktionen, ist aber nicht effizient bedienbar.", correct: true, feedback: "Richtig. Safety und Functionality sind erfüllt — aber Usability fehlt. Ein System das Tom bei der Evaluierung schon frustriert, wird er nach der Einführung sabotieren oder ignorieren." }
+        { text: "Ebene 5 (Individuation): Das System lässt sich nicht an Toms Arbeitsweise anpassen.", correct: false, feedback: "Individuation ist die höchste Ebene. Sie setzt voraus, dass Usability bereits erfüllt ist. Toms Problem ist grundlegender." },
+        { text: "Ebene 1 (Safety): Technische Instabilität ist die häufigste Ursache für Nutzerfrust, da Abstürze und Datenverluste das Vertrauen in das System nachhaltig beschädigen.", correct: false, feedback: "Stabilität ist laut Aufgabenstellung gegeben. Toms Problem liegt auf einer anderen Ebene." },
+        { text: "Ebene 3 (Usability): Das System hat die nötigen Funktionen, ist aber nicht effizient bedienbar.", correct: true, feedback: "Richtig. Safety und Functionality sind erfüllt, aber Usability fehlt. Ein System, das Tom bei der Evaluierung schon frustriert, wird er nach der Einführung sabotieren oder ignorieren." }
       ] },
     {
       id: "4_4", type: "definition", charKey: "priya",
-      charMessage: "In Enterprise-Systemen gibt es nicht 'den Nutzer' — es gibt viele verschiedene Nutzergruppen mit völlig unterschiedlichen Aufgaben. SAP Fiori ist ein gutes Beispiel dafür.",
+      charMessage: "In Enterprise-Systemen gibt es nicht 'den Nutzer'. Es gibt viele verschiedene Nutzergruppen mit völlig unterschiedlichen Aufgaben. SAP Fiori ist ein gutes Beispiel dafür.",
       definition:{ term: "Personas und App-Typen in Enterprise Systems", summary: "Im Unternehmenskontext gliedern sich Personas nach ihren betrieblich wahrzunehmenden Aufgaben und ihrem Erfahrungsgrad. Beispiel SAP Fiori: Transaktions-Apps vs. Analytische Apps.",
         aspects: [
-          { icon: "👥", title: "Aufgabenbasierte Personas", text: "Personas im Enterprise-Kontext sind durch ihre betrieblichen Aufgaben definiert — nicht durch demografische Merkmale" },
-          { icon: "📝", title: "Transaktions-Apps", text: "Unterstützen operative Transaktionen: Urlaubsgenehmigungen, Auftragsbestätigungen — auch mobil" },
+          { icon: "👥", title: "Aufgabenbasierte Personas", text: "Personas im Enterprise-Kontext sind durch ihre betrieblichen Aufgaben definiert, nicht durch demografische Merkmale" },
+          { icon: "📝", title: "Transaktions-Apps", text: "Unterstützen operative Transaktionen: Urlaubsgenehmigungen, Auftragsbestätigungen, auch mobil" },
           { icon: "📊", title: "Analytische Apps", text: "Echtzeit-Datenanalyse von Geschäftsprozessen: visuelle Übersichten, Auswertungen, komplexe Kalkulationen" },
           { icon: "🎯", title: "Unterschiedliche Bedürfnisse", text: "Ein Lagerarbeiter braucht schnelle Transaktions-Apps. Ein Controller braucht analytische Tiefe." }
         ],
-        nexusContext: "Tom braucht eine Transaktions-App für schnelle Lagerbuchungen. Lena braucht eine analytische App. Maya braucht ein Executive Dashboard. Drei Personas — drei völlig verschiedene UI-Anforderungen, aber ein System." },
+        nexusContext: "Tom braucht eine Transaktions-App für schnelle Lagerbuchungen. Lena braucht eine analytische App. Maya braucht ein Executive Dashboard. Drei Personas, drei völlig verschiedene UI-Anforderungen, aber ein System." },
       question: "Warum reicht es nicht, für alle Nutzer eines Enterprise-Systems dieselbe Oberfläche zu gestalten?",
       answers: [
-        { text: "Weil verschiedene Nutzer auf unterschiedlichen Endgeräten arbeiten — Desktop im Büro, Tablet im Lager, Smartphone unterwegs — und das System für alle Bildschirmgrößen optimiert sein muss.", correct: false, feedback: "Responsivität ist ein technisches Thema, aber nicht der konzeptionelle Kern." },
-        { text: "Weil verschiedene Nutzergruppen unterschiedliche Aufgaben haben — und Usability immer relativ zum Nutzungskontext ist.", correct: true, feedback: "Genau. Was für den Controller perfekt ist, überfordert den Lagerarbeiter. Aufgabenbasierte Personas sind die Antwort auf diese Heterogenität." },
+        { text: "Weil verschiedene Nutzer auf unterschiedlichen Endgeräten arbeiten, Desktop im Büro, Tablet im Lager, Smartphone unterwegs, und das System für alle Bildschirmgrößen optimiert sein muss.", correct: false, feedback: "Responsivität ist ein technisches Thema, aber nicht der konzeptionelle Kern." },
+        { text: "Weil verschiedene Nutzergruppen unterschiedliche Aufgaben haben und Usability immer relativ zum Nutzungskontext ist.", correct: true, feedback: "Genau. Was für den Controller perfekt ist, überfordert den Lagerarbeiter. Aufgabenbasierte Personas sind die Antwort auf diese Heterogenität." },
         { text: "Weil eine einheitliche Oberfläche für alle Nutzergruppen zu komplex würde und die Schulungskosten für eine so vielfältige Belegschaft wie die von NEXUS prohibitiv hoch wären.", correct: false, feedback: "Schulungskosten sind ein praktisches Argument, aber nicht die konzeptionelle Begründung." }
       ] },
     {
       id: "4_5", type: "reflection", charKey: "carlos",
-      message: "Jetzt verstehe ich, warum ich mit dem neuen System so kämpfe. Es wurde nicht für meine Aufgaben gebaut — oder zumindest nicht für meinen Nutzungskontext als Vertriebsleiter. Das ist kein persönliches Versagen. Das ist schlechtes UX-Design.",
+      message: "Jetzt verstehe ich, warum ich mit dem neuen System so kämpfe. Es wurde nicht für meine Aufgaben gebaut, oder zumindest nicht für meinen Nutzungskontext als Vertriebsleiter. Das ist kein persönliches Versagen. Das ist schlechtes UX-Design.",
       question: "Ein Enterprise-System-Hersteller sagt: 'Unser System hat alle Funktionen die Sie brauchen.' Was fehlt in dieser Aussage aus UX-Perspektive?",
       answers: [
-        { text: "Funktionalität allein sagt nichts über Usability und UX — ob Nutzer die Funktionen effizient und mit positiver Erfahrung nutzen können, bleibt offen.", correct: true, feedback: "Genau. 'Hat alle Funktionen' entspricht Ebene 2 der Bedürfnispyramide. Ob das System auch usable ist und eine positive Erfahrung schafft, ist eine völlig andere Frage." },
-        { text: "Eine Aussage zur mobilen Verfügbarkeit des Systems, da viele Mitarbeitende — besonders im Lager und im Außendienst — hauptsächlich mit Smartphones oder Tablets arbeiten.", correct: false, feedback: "Mobile Unterstützung ist ein Feature, keine UX-Aussage." },
+        { text: "Funktionalität allein sagt nichts über Usability und UX, ob Nutzer die Funktionen effizient und mit positiver Erfahrung nutzen können, bleibt offen.", correct: true, feedback: "Genau. 'Hat alle Funktionen' entspricht Ebene 2 der Bedürfnispyramide. Ob das System auch usable ist und eine positive Erfahrung schafft, ist eine völlig andere Frage." },
+        { text: "Eine Aussage zur mobilen Verfügbarkeit des Systems, da viele Mitarbeitende, besonders im Lager und im Außendienst, hauptsächlich mit Smartphones oder Tablets arbeiten.", correct: false, feedback: "Mobile Unterstützung ist ein Feature, keine UX-Aussage." },
         { text: "Eine detaillierte Aussage über Anschaffungskosten, laufende Lizenzgebühren und das Preismodell, da diese Faktoren maßgeblich über die Wirtschaftlichkeit einer ES-Einführung entscheiden.", correct: false, feedback: "Preismodelle sind wichtig für die Kaufentscheidung, aber nicht die UX-Lücke." }
       ] },
   ],
   outro: {
     charKey: "carlos",
-    message: "Ich werde bei der nächsten Systemauswahl nicht nur fragen 'kann es das?' — sondern 'können wir damit arbeiten?' Das ist der Unterschied zwischen einem System das man hat und einem das man nutzt.",
+    message: "Ich werde bei der nächsten Systemauswahl nicht nur fragen 'kann es das?', sondern 'können wir damit arbeiten?' Das ist der Unterschied zwischen einem System, das man hat, und einem, das man nutzt.",
     xp: 250,
     badge: "🖥️ UX-Versteher"
   },

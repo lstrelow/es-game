@@ -199,7 +199,7 @@ export function EpilogueScreen({ epilogue, moduleTitle, onBack }) {
       <div style={{ background:C.bgCard, borderBottom:`1px solid ${C.border}`, padding:"12px 24px", display:"flex", alignItems:"center", boxShadow:"0 1px 8px rgba(0,0,0,0.05)", position:"relative" }}>
         <div style={{ width:40 }} />
         <div style={{ position:"absolute", left:"50%", transform:"translateX(-50%)" }}>
-          <span style={{ fontSize:17, fontWeight:900, color:C.text, letterSpacing:-0.5, fontFamily:"Georgia,serif" }}>
+          <span style={{ fontSize:17, fontWeight:900, color:C.text, letterSpacing:-0.5 }}>
             NEXUS <span style={{ color:C.accent }}>Corp</span>
           </span>
         </div>

@@ -42,7 +42,7 @@ export function LevelPlayer({ levelNr, isLastLevel, onBack, onComplete, streakAc
           <div style={{ color:C.textLight, fontSize:10, textTransform:"uppercase", letterSpacing:"2px" }}>Level {levelNr}</div>
           <div style={{ color:C.text, fontSize:17, fontWeight:700 }}>
             {levelTitle.includes("NEXUS Corp")
-              ? <>{levelTitle.replace("NEXUS Corp", "")}<span style={{ fontFamily:"Georgia,serif" }}>NEXUS <span style={{ color:C.accent }}>Corp</span></span></>
+              ? <>{levelTitle.replace("NEXUS Corp", "")}<span>NEXUS <span style={{ color:C.accent }}>Corp</span></span></>
               : levelTitle}
           </div>
         </div>

@@ -131,7 +131,7 @@ export function TitleScreen({ onStart, streak, onStartSession, onEndSession }) {
 
       <div style={{ textAlign:"center", maxWidth:520, width:"100%", zIndex:1 }}>
         <div style={{ fontSize:48, marginBottom:12 }}>🏢</div>
-        <h1 style={{ fontSize:"clamp(32px,8vw,52px)", fontWeight:900, color:C.text, margin:"0 0 8px", letterSpacing:-1, fontFamily:"Georgia,serif" }}>
+        <h1 style={{ fontSize:"clamp(32px,8vw,52px)", fontWeight:900, color:C.text, margin:"0 0 8px", letterSpacing:-1 }}>
           NEXUS <span style={{ color:C.accent }}>Corp</span>
         </h1>
         <p style={{ color:C.textLight, fontSize:"clamp(9px,2.5vw,11px)", letterSpacing:"2px", textTransform:"uppercase", marginBottom:16, lineHeight:1.7 }}>
@@ -141,7 +141,7 @@ export function TitleScreen({ onStart, streak, onStartSession, onEndSession }) {
           Sie sind Unternehmensberaterin bzw. -berater.<br/>
           Systeme versagen, Menschen sind frustriert,<br/>
           wichtige Entscheidungen müssen getroffen werden.<br/>
-          <span style={{ color:C.accent, fontWeight:700 }}>Bringen Sie Ordnung in das Chaos?</span>
+          <span style={{ color:C.accent, fontWeight:700 }}>Sind Sie bereit für diese Herausforderung?</span>
         </p>
         <div style={{ display:"flex", justifyContent:"center", gap:"clamp(8px,3vw,16px)", marginBottom:28, flexWrap:"wrap" }}>
           {Object.keys(CHARACTERS).map(k => <Avatar key={k} charKey={k} size="md" />)}

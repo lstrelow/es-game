@@ -1,24 +1,24 @@
 export const L7 = {
   intro: {
     charKey: "priya",
-    message: "Wir haben uns für ein ERP entschieden. Jetzt kommt die Frage, die in der Praxis über Erfolg oder Misserfolg entscheidet: Passen wir NEXUS an das System an — oder passen wir das System an NEXUS an? Diese Entscheidung ist keine technische. Sie ist strategisch."
+    message: "Wir haben uns für ein ERP entschieden. Jetzt kommt die Frage, die in der Praxis über Erfolg oder Misserfolg entscheidet: Passen wir NEXUS an das System an, oder passen wir das System an NEXUS an? Diese Entscheidung ist keine technische. Sie ist strategisch."
   },
   scenes:[
     {
       id: "7_1", type: "definition", charKey: "priya",
-      charMessage: "Es gibt grundsätzlich zwei Richtungen. Beide haben ihre Berechtigung — und beide haben ihren Preis.",
+      charMessage: "Es gibt grundsätzlich zwei Richtungen. Beide haben ihre Berechtigung, und beide haben ihren Preis.",
       definition:{ term: "Grundsätzliche Handlungsalternativen bei der ES-Einführung", summary: "Bei der Einführung eines Enterprise Systems stehen zwei grundlegende Richtungen zur Wahl: Prozessveränderung (Organisation passt sich an die Software an) oder Softwareveränderung (Software wird an die Organisation angepasst). In der Praxis sind auch Kombinationen und zeitliche Abfolgen möglich.",
         aspects: [
           { icon: "🏢", title: "Prozessveränderung", text: "Die Organisation passt ihre Abläufe an den Software-Standard an. Vorteil: geringere IT-Kosten, einfachere Updates." },
           { icon: "💻", title: "Softwareveränderung", text: "Die Software wird an die bestehenden Abläufe angepasst. Vorteil: Prozesse bleiben erhalten. Nachteil: höhere Kosten, Update-Probleme." },
-          { icon: "🔀", title: "Kombination", text: "Beide Ansätze werden kombiniert — z.B. Standard für Routineprozesse, Individualisierung für differenzierende Kernprozesse." },
+          { icon: "🔀", title: "Kombination", text: "Beide Ansätze werden kombiniert, z. B. Standard für Routineprozesse, Individualisierung für differenzierende Kernprozesse." },
           { icon: "⏱️", title: "Zeitliche Veränderung", text: "Der Ansatz kann sich im Projektverlauf ändern." }
         ],
         nexusContext: "NEXUS steht vor der Entscheidung: Soll Tom seinen bewährten Lagerprozess aufgeben und den SAP-Standard übernehmen? Oder soll SAP so konfiguriert werden, dass es Toms Prozess abbildet?" },
       question: "Tom sagt: 'Unser Lagerprozess ist der Grund warum wir schneller liefern als die Konkurrenz. Den geben wir nicht auf.' Welche strategische Konsequenz hat das?",
       answers: [
         { text: "Tom sollte seinen Prozess zunächst vollständig dokumentieren und dann gemeinsam mit dem Projektteam entscheiden, welche Teile davon im ERP-Standard abgebildet werden können.", correct: false, feedback: "Tom ist als Prozessexperte unverzichtbar für das Projekt." },
-        { text: "Wenn der Prozess ein echter Wettbewerbsvorteil ist, spricht das für eine Softwareanpassung — auch wenn das teurer und aufwändiger ist.", correct: true, feedback: "Genau die richtige Abwägung. Prozessveränderung ist günstiger, aber wenn ein Prozess wirklich differenzierend ist, kann Softwareanpassung die richtige Investition sein." },
+        { text: "Wenn der Prozess ein echter Wettbewerbsvorteil ist, spricht das für eine Softwareanpassung, auch wenn das teurer und aufwändiger ist.", correct: true, feedback: "Genau die richtige Abwägung. Prozessveränderung ist günstiger, aber wenn ein Prozess wirklich differenzierend ist, kann Softwareanpassung die richtige Investition sein." },
         { text: "NEXUS sollte konsequent auf den SAP-Standard setzen, da standardisierte Prozesse langfristig wartungsärmer sind und das Unternehmen von zukünftigen SAP-Innovationen automatisch profitiert.", correct: false, feedback: "Das ist zu pauschal. Wenn der Lagerprozess tatsächlich ein Wettbewerbsvorteil ist, wäre die blinde Übernahme des Standards ein strategischer Fehler." }
       ] },
     {
@@ -28,15 +28,15 @@ export const L7 = {
         aspects: [
           { icon: "⚙️", title: "1. Customizing", text: "Konfiguration innerhalb des vorgesehenen Rahmens: Module auswählen, Parameter setzen, Stammdaten befüllen" },
           { icon: "🔌", title: "2. Erweiterung via BAPI", text: "Entwicklung an vorgesehenen Schnittstellen (Business Application Programming Interfaces)" },
-          { icon: "🛠️", title: "3. Individualentwicklung", text: "Entwicklung in eigenen Namensräumen, Umgehung der Standardlogik — maximale Flexibilität, aber höchstes Risiko" },
+          { icon: "🛠️", title: "3. Individualentwicklung", text: "Entwicklung in eigenen Namensräumen, Umgehung der Standardlogik: maximale Flexibilität, aber höchstes Risiko" },
           { icon: "⚠️", title: "Update-Risiko", text: "Je tiefer der Eingriff, desto schwieriger sind Versionsupdates" }
         ],
-        nexusContext: "Priya empfiehlt: Routineprozesse per Customizing, spezielle Lagerlogik über BAPI-Erweiterungen, und Toms einzigartigen Optimierungsalgorithmus als Individualentwicklung — mit klarem Bewusstsein über das Wartungsrisiko." },
+        nexusContext: "Priya empfiehlt: Routineprozesse per Customizing, spezielle Lagerlogik über BAPI-Erweiterungen, und Toms einzigartigen Optimierungsalgorithmus als Individualentwicklung, mit klarem Bewusstsein über das Wartungsrisiko." },
       question: "NEXUS entwickelt eine individuelle Funktion in einem eigenen Namensraum. Ein Jahr später erscheint SAP Release 2026. Was ist das wahrscheinliche Problem?",
       answers: [
         { text: "SAP wird NEXUS für Individualentwicklungen in eigenen Namensräumen zusätzliche Supportgebühren berechnen, da diese Anpassungen außerhalb der Standardwartung liegen und separat gepflegt werden müssen.", correct: false, feedback: "Lizenzkosten entstehen durch Individualentwicklungen nicht direkt. Das eigentliche Problem ist technischer Natur." },
         { text: "SAP bietet mit seinen Migration-Tools eine weitgehend automatische Übernahme von Individualentwicklungen beim Versionsupgrade, sofern diese in den vorgesehenen Erweiterungsrahmen entwickelt wurden.", correct: false, feedback: "SAP übernimmt keine Verantwortung für Individualentwicklungen außerhalb des Standards." },
-        { text: "Die Individualentwicklung muss geprüft und möglicherweise komplett neu entwickelt werden, weil das neue Release die zugrunde liegende Standardlogik verändert hat.", correct: true, feedback: "Genau das ist das Kernrisiko. Jedes Update kann die eigenen Entwicklungen beschädigen — was zu erheblichen Folgekosten führt." }
+        { text: "Die Individualentwicklung muss geprüft und möglicherweise komplett neu entwickelt werden, weil das neue Release die zugrunde liegende Standardlogik verändert hat.", correct: true, feedback: "Genau das ist das Kernrisiko. Jedes Update kann die eigenen Entwicklungen beschädigen, was zu erheblichen Folgekosten führt." }
       ] },
     {
       id: "7_3", type: "definition", charKey: "priya",
@@ -52,8 +52,8 @@ export const L7 = {
       question: "Welches Kriterium ist langfristig am kritischsten bei einer tiefgreifenden Individualentwicklung?",
       answers: [
         { text: "Die Akzeptanz der Nutzer ist bei Individualentwicklungen oft geringer, weil diese weniger ausgereift wirken als der bewährte SAP-Standard und häufiger Fehler enthalten.", correct: false, feedback: "Nutzerakzeptanz ist wichtig, aber kein spezifisches Kriterium für Individualentwicklungen." },
-        { text: "Die initialen Entwicklungskosten sind bei Individualentwicklungen der kritischste Faktor — sie übersteigen oft das Budget und sind schwer vorauszusagen, was zu Projektverzögerungen führt.", correct: false, feedback: "Initiale Kosten sind ein wichtiges Kriterium, aber nicht das langfristig kritischste." },
-        { text: "Die Auswirkung auf die Release-Politik — bei jedem Update muss die Individualentwicklung geprüft, angepasst oder neu entwickelt werden.", correct: true, feedback: "Genau. Dieser Folgeaufwand wird oft unterschätzt. Unternehmen mit vielen Individualentwicklungen können SAP-Updates kaum noch einspielen." }
+        { text: "Die initialen Entwicklungskosten sind bei Individualentwicklungen der kritischste Faktor, sie übersteigen oft das Budget und sind schwer vorauszusagen, was zu Projektverzögerungen führt.", correct: false, feedback: "Initiale Kosten sind ein wichtiges Kriterium, aber nicht das langfristig kritischste." },
+        { text: "Die Auswirkung auf die Release-Politik: Bei jedem Update muss die Individualentwicklung geprüft, angepasst oder neu entwickelt werden.", correct: true, feedback: "Genau. Dieser Folgeaufwand wird oft unterschätzt. Unternehmen mit vielen Individualentwicklungen können SAP-Updates kaum noch einspielen." }
       ] },
     {
       id: "7_4", type: "matching", charKey: "priya",
@@ -61,24 +61,24 @@ export const L7 = {
       instruction: "Klicken Sie zuerst eine Handlungsalternative, dann das passende Szenario.",
       pairs: [
         { situation: "NEXUS nutzt einen offiziell dokumentierten SAP-Erweiterungspunkt um eine eigene Bestelllogik anzubinden.", term: "BAPI-Erweiterung" },
-        { situation: "Nach dem Go-Live stellt sich heraus, dass der Standard-Bestellprozess zu langsam ist — NEXUS beschließt nachträglich Softwareanpassungen.", term: "Zeitliche Veränderung" },
-        { situation: "NEXUS übernimmt SAP-Standard für die Urlaubsgenehmigung — der bisherige Papierprozess wird abgelöst.", term: "Prozessveränderung" },
+        { situation: "Nach dem Go-Live stellt sich heraus, dass der Standard-Bestellprozess zu langsam ist. NEXUS beschließt nachträglich Softwareanpassungen.", term: "Zeitliche Veränderung" },
+        { situation: "NEXUS übernimmt SAP-Standard für die Urlaubsgenehmigung, der bisherige Papierprozess wird abgelöst.", term: "Prozessveränderung" },
         { situation: "Priya aktiviert das SAP-Modul für Lagerverwaltung und trägt Lagerstandorte und Artikelnummern ein.", term: "Customizing" },
-        { situation: "Ein Entwickler schreibt eine neue Funktion in einem Z-Namensraum die SAPs Standardlogik umgeht.", term: "Individualentwicklung" }
+        { situation: "Ein Entwickler schreibt eine neue Funktion in einem Z-Namensraum, die SAPs Standardlogik umgeht.", term: "Individualentwicklung" }
       ] },
     {
       id: "7_5", type: "reflection", charKey: "maya",
-      message: "Ich habe gelernt, dass die Frage 'Standard oder Individual?' keine technische Frage ist — sondern eine strategische. Wir müssen uns fragen: Was macht uns als Unternehmen einzigartig? Nur das verdient eine Individualentwicklung.",
+      message: "Ich habe gelernt, dass die Frage 'Standard oder Individual?' keine technische Frage ist, sondern eine strategische. Wir müssen uns fragen: Was macht uns als Unternehmen einzigartig? Nur das verdient eine Individualentwicklung.",
       question: "Was ist die wichtigste Faustregel bei der Entscheidung zwischen Prozessanpassung und Softwareanpassung?",
       answers: [
         { text: "Die Entscheidung sollte vom IT-Team getroffen werden, da Priya und ihre Kollegen am besten beurteilen können, welche technischen Anpassungen machbar sind und welche Risiken sie mit sich bringen.", correct: false, feedback: "Die IT kann die technischen Konsequenzen bewerten, aber die strategische Entscheidung muss vom Business kommen." },
         { text: "Software sollte grundsätzlich an die Unternehmensprozesse angepasst werden, da jedes Unternehmen einzigartig ist und der SAP-Standard nie alle spezifischen Anforderungen eines mittelständischen Unternehmens abdecken kann.", correct: false, feedback: "Diese Haltung führt zu überkomplexen, kaum wartbaren Systemen." },
-        { text: "Prozessanpassung ist der Normalfall — Softwareanpassung nur dort wo ein echter, differenzierender Wettbewerbsvorteil auf dem Spiel steht.", correct: true, feedback: "Das ist die goldene Regel. Standardprozesse im Standard laufen lassen spart Kosten und Wartungsaufwand. Nur echte Wettbewerbsvorteile rechtfertigen den Aufwand einer Individualentwicklung." }
+        { text: "Prozessanpassung ist der Normalfall, Softwareanpassung nur dort, wo ein echter, differenzierender Wettbewerbsvorteil auf dem Spiel steht.", correct: true, feedback: "Das ist die goldene Regel. Standardprozesse im Standard laufen lassen spart Kosten und Wartungsaufwand. Nur echte Wettbewerbsvorteile rechtfertigen den Aufwand einer Individualentwicklung." }
       ] },
   ],
   outro: {
     charKey: "priya",
-    message: "Standard wo möglich, Individual wo nötig. Diese Maxime klingt einfach — aber sie erfordert Mut: den Mut, bewährte Prozesse aufzugeben, und die Disziplin, Individualentwicklungen auf das Wesentliche zu beschränken.",
+    message: "Standard wo möglich, Individual wo nötig. Diese Maxime klingt einfach, aber sie erfordert Mut: den Mut, bewährte Prozesse aufzugeben, und die Disziplin, Individualentwicklungen auf das Wesentliche zu beschränken.",
     xp: 300,
     badge: "⚙️ Implementierungs-Expertin"
   },
